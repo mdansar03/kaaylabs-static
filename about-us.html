@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang ='eng' dir = 'ltr'>
+    <head>
+      <meta charset = 'utf -8'>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="/styles/index.css">
+      <link rel="stylesheet" href="/styles/navbar.css">
+        <body>
+            <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
+                <div class="container-fluid">
+                    <img src="/assets/images/All/image_1.png" style="margin-left:85px;">
+                    <div class="collapse navbar-collapse">
+                        <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
+        
+                            <div class="nav-btn-container" id="home_button">
+                                <button class="btn bg-transparent" style="margin-right:5px;"
+                                    onclick="showSection('home_section'); setActiveNav('home_button')">
+                                    <div style="position: relative;"><a href="/">Home</a><div class="underline"></div>
+                                    </div>
+                                </button>
+                            </div>
+        
+                            <div class="nav-btn-container active-nav" id="about_button">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                    onclick="showSection('about_section'); setActiveNav('about_button')">
+                                    <div style="position: relative;"><a href="/about-us.html">About</a><div class="underline"></div>
+                                    </div>
+                                </button>
+                            </div>
+        
+                            <div class="nav-btn-container" id="services_button">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                    onclick="showSection('services_section'); setActiveNav('services_button')">
+                                    <div style="position: relative;">Services &gt;<div class="underline" style="left: 22px;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+        
+                            <div class="nav-btn-container" id="resources_button">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                    onclick="showSection('blog_section'); setActiveNav('resources_button')">
+                                    <div style="position: relative;">Blog<div class="underline" style="left: 4px;"></div>
+                                    </div>
+                                </button>
+                            </div>
+        
+        
+                            <div class="nav-btn-container" id="career_button">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                    onclick="showSection('careers_section'); setActiveNav('career_button')">
+                                    <div style="position: relative;">Careers<div class="underline" style="left: 15px;"></div>
+                                    </div>
+                                </button>
+        
+                            </div>
+        
+        
+                            <button class="btn btn-outline-success bg-transparent" style="border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
+                                margin-left:10px;
+                                padding-left: 30px;
+                                padding-right:30px;
+                                border-radius:40px;
+                                color:white;" onclick="showSection('home_section')"> Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+                <div class = "container-fluid" >
+                    <img src = image_1.png style = "margin-left:85px;">
+                    <div class = "collapse navbar-collapse">
+                        <div class = "collapse navbar-collapse">
+                            <button class = "btn bg-transparent" id = "about_button" style = "margin-left:270px; margin-right:5px;" >About</button>
+                            <button class = "btn bg-transparent" id ="services_button" style = "margin-left:-15px; margin-right:5px;">Services</button>
+                            <button class = "btn bg-transparent" id = "resources_button" style = "margin-left:-15px; margin-right:5px;">Resources</button>
+                            <button class = "btn bg-transparent" id = "client_button"  style = "margin-left:-15px; margin-right:5px;">Clients</button>
+                            <button class = "btn bg-transparent" id = "career_button" style = "margin-left:-15px; margin-right:5px;">Careers</button>
+                            <button class = "btn btn-outline-success bg-transparent" style = "border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
+                            margin-left:10px;
+                            padding-left: 30px;
+                            padding-right:30px;
+                            border-radius:40px;
+                            color:white;"> Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="placeholder" id = "about_id">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                                <button class = "btn btn-transparent" id = "enterprise_software" >Enterprise Software Development</button>
+                                <button class = "btn btn-transparent" id = "business_analytics" > Business Analytics & Data Engineering </button>
+                                <button class = "btn btn-transparent" id = "software_mordernization" >Software Modernization Re-platforming</button>
+                                <button class = "btn btn-transparent" id = "cloud_migration" >Cloud Migration & Optimization</button>                                         
+                        </div>
+                        <div class = "col-md-6" id = "content_window">
+                            Elevate your business with custom software solutions tailored to your unique needs. Our enterprise software development expertise ensures robust, scalable, and high-performance applications designed to empower your operations and streamline workflows.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="placeholder" id = "services_id">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <div class = "col-md-4">
+                                <button class = "btn btn-transparent" id = "enterprise_software" >Enterprise Software Development</button>
+                                <button class = "btn btn-transparent" id = "business_analytics" > Business Analytics & Data Engineering </button>
+                                <button class = "btn btn-transparent" id = "software_mordernization" >Software Modernization Re-platforming</button>
+                                <button class = "btn btn-transparent" id = "cloud_migration" >Cloud Migration & Optimization</button>                                         
+                        </div>
+                        </div>
+                        <div class = "col-md-6" id = "content_window">
+                            Elevate your business with custom software solutions tailored to your unique needs. Our enterprise software development expertise ensures robust, scalable, and high-performance applications designed to empower your operations and streamline workflows.
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="placeholder" id = "resources_id">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <div class = "col-md-4">
+                                <button class = "btn btn-transparent" id = "enterprise_software" >Enterprise Software Development</button>
+                                <button class = "btn btn-transparent" id = "business_analytics" > Business Analytics & Data Engineering </button>
+                                <button class = "btn btn-transparent" id = "software_mordernization" >Software Modernization Re-platforming</button>
+                                <button class = "btn btn-transparent" id = "cloud_migration" >Cloud Migration & Optimization</button>                                         
+                            </div>
+                        </div>
+                        <div class = "col-md-6" id = "content_window">
+                            Elevate your business with custom software solutions tailored to your unique needs. Our enterprise software development expertise ensures robust, scalable, and high-performance applications designed to empower your operations and streamline workflows.
+                        </div>
+                    </div>
+                </div>
+                <div class="placeholder" id = "clients_id">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <div class = "col-md-4">
+                                <button class = "btn btn-transparent" id = "enterprise_software" >Enterprise Software Development</button>
+                                <button class = "btn btn-transparent" id = "business_analytics" > Business Analytics & Data Engineering </button>
+                                <button class = "btn btn-transparent" id = "software_mordernization" >Software Modernization Re-platforming</button>
+                                <button class = "btn btn-transparent" id = "cloud_migration" >Cloud Migration & Optimization</button>                                         
+                        </div>
+                        </div>
+                        <div class = "col-md-6" id = "content_window">
+                            Elevate your business with custom software solutions tailored to your unique needs. Our enterprise software development expertise ensures robust, scalable, and high-performance applications designed to empower your operations and streamline workflows.
+                        </div>
+                    </div>
+                </div>
+                <div class="placeholder" id = "careers_id">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <div class = "col-md-4">
+                                <button class = "btn btn-transparent" id = "enterprise_software" >Enterprise Software Development</button>
+                                <button class = "btn btn-transparent" id = "business_analytics" > Business Analytics & Data Engineering </button>
+                                <button class = "btn btn-transparent" id = "software_mordernization" >Software Modernization Re-platforming</button>
+                                <button class = "btn btn-transparent" id = "cloud_migration" >Cloud Migration & Optimization</button>                                         
+                        </div>
+                        </div>
+                        <div class = "col-md-6" id = "content_window">
+                            Elevate your business with custom software solutions tailored to your unique needs. Our enterprise software development expertise ensures robust, scalable, and high-performance applications designed to empower your operations and streamline workflows.
+                        </div>
+                    </div>
+                </div>    
+            
+            </nav>  -->
+            
+            <div id = "about_us_text"> 
+                <div class ="row">
+                    <p id = "about_us" style = "opacity:30%; font-size: 20px; font-family: Raleway; font-weight:600px; 
+                    color:rgba(0, 0, 0, 1);margin-left:-10px;margin-bottom: -5px;">ABOUT US</p>
+                    <div class = "col-md-12" style = "font-size: 48px; font-family: Playfair Display;font-weight:500; margin-left:-10px;">
+                        <h1 id = "about_us_desc" style = "font-size: 48px; font-family: Playfair Display;font-weight:500;">Your one-stop shop for all things digital:<br>
+                            From web development to cutting-edge AI,<br>
+                            we've got you covered.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class = "container-fluid col-md-12" id = "office_view">
+                <img src = "about_us_first.png">
+            </div>
+            <div class = "col-md-10 center " id = "introduction" style = "margin-left:-35px;">
+                <p id = "introduction"  style = "font-family: Raleway; font-size:18px; color:rgba(0, 0, 0, 0.32);">
+                    At KaayLabs, we're a passionate team of digital experts who are driven by helping our clients achieve their goals.
+                    We offer a wide range of services, from web development and design to marketing and AI solutions. Founded in 2015 by 
+                    industry veteran Krishnan Naranapatty, who boasts over 30 years of experience, we've grown into a trusted partner for 
+                    businesses of all sizes. With a commitment to innovation and exceptional service, we're here to help you take your
+                    digital presence to the next level.
+                    
+                </p>
+            </div>
+
+
+            <div style = "margin-left: 80px;">
+                <div class = "row" id = "growth_result">
+                    <p style = "font-size:20px; opacity:30%; font-family: Raleway; color:rgba(0, 0, 0, 1);
+                    padding-top: 30px; padding-bottom:0px;">
+                       OUR VALUES
+                   </p>
+                    <div class = "col-md-8">
+                        <h1 style = "font-size:32px; font-family: Playfair Display; color:#035485";>
+                            Growth is never by mere chance;
+                            <br>
+                            it is the result of forces working together.
+                        </h1>
+                    </div>
+                </div>
+                <div class = "row" id = "growth_vision">
+                    <div class = "col-md-8">                    
+                        <p style = "font-size:20px; opacity:30%; font-family: Raleway; color:rgba(0, 0, 0, 1);">
+                            We believe that growth comes from combining the vision of our clients 
+                            with the expertise of our team. We foster a culture of innovation and collaboration, 
+                            where diverse perspectives come together to create cutting-edge solutions for our clients. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="container" style = "margin-bottom:300px;margin-top:20px; ">
+                <div class = "col-sm-11">
+                    <div class = "row">
+                        <div class = "tablink" onclick = "growth_values('Transparency')" id ="defaultOpen" style = "font-size:24px; opacity:30%; font-family: Raleway; color:rgba(0, 0, 0, 1);">Transparency</div>
+                        <div class = "tablink" onclick = "growth_values('Comittment')" style = "font-size:24px; opacity:30%; font-family: Raleway; color:rgba(0, 0, 0, 1);">Comittment</div>
+                        <div class = "tablink" onclick = "growth_values('Hard Work')" style = "font-size:24px; opacity:30%; font-family: Raleway; color:rgba(0, 0, 0, 1);">Hardwork</div>
+                        <div class = "tablink" onclick = "growth_values('Excellence')" style = "font-size:24px; opacity:30%; font-family: Raleway; color:rgba(0, 0, 0, 1);">Excellency</div>
+                            
+                    </div>
+
+                    <div id = "Transparency" class = "growth_values" style = "background-color:rgba(250, 250, 250, 1); margin-top:-50px; padding-bottom:60px;">
+                        <p style = "font-family: Raleway;font-size: 18px; font-weight: 400px; margin-top:100px; color:rgba(0, 0, 0, 1);padding-top:30px;padding-bottom:20px;">
+                            We are 100% transparent internally, and we've found that our clients absolutely love it. 
+                            We have nothing to hide. We have no secrets.
+                            (Well, we do have secrets, but we are comfortable sharing them.)</p>
+
+                    </div>
+                    <div id = "Comittment" class = "growth_values" style = "background-color:rgba(250, 250, 250, 1);">
+                        <p style = "font-family: Raleway;font-size: 18px; font-weight: 400px; margin-top:60px; color:rgba(0, 0, 0, 1);">We are 100% transparent internally, and we've found that our clients absolutely love it. 
+                            We have nothing to hide. We have no secrets.
+                            (Well, we do have secrets, but we are comfortable sharing them.)</p>
+
+                    </div>
+                    <div id = "Hard Work" class = "growth_values" style = "background-color:rgba(250, 250, 250, 1); ">
+                        <p style = "font-family: Raleway;font-size: 18px; font-weight: 400px; margin-top:60px; color:rgba(0, 0, 0, 1);">We are 100% transparent internally, and we've found that our clients absolutely love it. 
+                            We have nothing to hide. We have no secrets.
+                            (Well, we do have secrets, but we are comfortable sharing them.)</p>
+
+                    </div>
+                    <div id = "Excellence" class = "growth_values" style = "background-color:rgba(250, 250, 250, 1); ">
+                        <p style = "font-family: Raleway;font-size: 18px; font-weight: 400px; margin-top:60px; color:rgba(0, 0, 0, 1);">We are 100% transparent internally, and we've found that our clients absolutely love it. 
+                            We have nothing to hide. We have no secrets.
+                            (Well, we do have secrets, but we are comfortable sharing them.)</p>
+
+                    </div>
+            </div> 
+        </div>
+   
+            
+            <div>
+                <div class = "row" style="background-color:#035485; padding-left:40px;
+                 padding-right:30px; padding-top:40px; padding-bottom:40px; margin-bottom:0px;">
+                    <div class = "col-md-10" >
+                        <img src = "kaaylabs_collage.png" style = "margin-left:100px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class = "container" style = "margin-bottom:50px;">
+                <p style = "color:#035485; text-align: center; font-size: 32px;
+                 font-family:Playfair Display; margin-top:30px; ">Platform Partner</p>
+                <div class = "row">
+                    <div class = "col-sm-2" style = "margin-top:40px; margin-right:20px;">
+                        <img src = "mysql.png">
+                    </div>
+                    <div class = "col-sm-2" style = "margin-top:40px; margin-right:20px;">
+                        <img src = "">
+                    </div>
+                    <div class = "col-sm-2" style = "margin-top:40px; margin-right:60px;">
+                        <img src= "java.png">
+                    </div>
+                    <div class = "col-sm-2" style = "margin-top:60px; margin-right:60px;">
+                        <img src = "dotnet.png">
+                    </div>
+                    <div class = "col-sm-2" style = "margin-top:60px; margin-right:20px;">
+                        <img src="nodejs.png">
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class = "full-width-container" style = "margin-left: 0;margin-right: 0; 
+                                                         background-color: #000000;width:100%; padding-top:50px;
+                                                         padding-bottom:50px;margin-top:0;">
+                <div class ="row">
+                    <div class = "col-md-5">
+                        <h1 style = "font-size:36px;font-family:Raleway; color: rgba(255, 255, 255, 1); margin-left:40px; font-weight:600px;
+                        margin-top:50px;margin-left:120px; width:400px;">
+                            Advance your vision<br>
+                            for a brighter future   
+                        </h1>
+                    </div>
+                    <div class = "col-md-3">
+                            <p style = "font-size:18px;font-family:Raleway; color: rgba(255, 255, 255, 1); margin-top:50px; opacity: 40%;">Call us on<br></p>
+                            <p style = "font-size:36px;font-family:Raleway; color: rgba(255, 255, 255, 1);">+91 98765 43210</p>
+                    </div>
+                    <div class = "col-md-3">
+                        <p style = "font-size:18px;font-family:Raleway; color: rgba(255, 255, 255, 1); margin-top:50px; opacity:40%;">
+                            Email us on
+                        </p>
+                        <p style = "font-size:36px;font-family:Raleway; color: rgba(255, 255, 255, 1);">
+                            hello.world@kaaylabs.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row" id = "sections">
+                <div class = "col">
+                    <a><h1 style = "font-family:Raleway; font-size: 54px; color:rgba(0, 0, 0, 1); margin-left:90px;">About us</h1></a>
+                    <p style = "font-family:Raleway; font-size: 30px; color:rgba(0, 0, 0, 1); opacity: 30%; margin-left:90px;">01</p>
+                </div>
+                <div class = "col">
+                    <a><h1 style = "font-family:Raleway; font-size: 54px; color:rgba(0, 0, 0, 1); margin-left:100px;">Services</h1></a>
+                    <p style = "font-family:Raleway; font-size: 30px; color:rgba(0, 0, 0, 1); opacity: 30%; margin-left:100px;">02</p>
+                </div>
+                <div class = "col">
+                    <a><h1 style = "font-family:Raleway; font-size: 54px; color:rgba(0, 0, 0, 1); margin-left:100px;">Client</h1></a>
+                    <p style = "font-family:Raleway; font-size: 30px; color:rgba(0, 0, 0, 1); opacity: 30%; margin-left:100px;">03</p>
+                </div>
+                <div class = "col">
+                    <a><h1 style = "font-family:Raleway; font-size: 54px; color:rgba(0, 0, 0, 1); margin-left:100px;">Blogs</h1></a>
+                    <p style = "font-family:Raleway; font-size: 30px; color:rgba(0, 0, 0, 1); opacity: 30%; margin-left:100px;">04</p>
+                </div>
+            </div>
+            <div class = "container">
+                <div class = "row" >
+
+                </div>
+
+            </div>
+            
+            <footer id = "footer_content" >
+                <div class = "row" >
+                    <div class = "col-md-4" id = "logo" >
+                        <img src = "image_1.png">
+                        <div class = "col" >                   
+                            <img src = "you_tube_logo.png" id = "social_media_links">
+                            <img src = "instagram_logo.png" id = "social_media_links">
+                            <img src = "facebook_logo.png" id = "social_media_links">
+                            <img src = "twitter_logo.png" id = "social_media_links">
+                        </div>
+                    </div>
+                    <div class = "col-md-3" id = "footer_address" style = "font-family: Raleway;" >
+                        <p style = "font-size: 20px; color:rgba(255, 255, 255, 1)">
+                            Find us at:</p>
+                            <p style = "font-size: 16px; color:rgba(255, 255, 255, 0.6)">Kaay Spaces No. 3/675 New No. 7, 
+                               Sri Krishna Enclave, New beach road,
+                               Kaveri Nagar, kottivakkam.
+                               Chennai, Tamil Nadu - 600041</p>
+                        <p style = "font-size: 20px; color:rgba(255, 255, 255, 1)">
+                            Call us at:</p>
+                            <p style = "font-size: 16px; color:rgba(255, 255, 255, 0.6);">+91 99446 81933</p>
+                            <p style = "font-size: 20px; color:rgba(255, 255, 255, 1.0);margin-bottom: 0;">Email us at :</p>
+                            <p style = "font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 30px;">hello.world@kaaylabs.com</p>
+                    </div>
+                    <div class = "col-md-2" id = "footer_service_type" style = "font-family: Raleway;">
+                        <p style = "font-size: 20px; color:rgba(255, 255, 255, 1);margin-bottom: 17px;">Site Map</p>
+                        <p style="margin-top:10px;font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 20px;">About</p>
+                        <p style = "font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Services</p>
+                        <p style = "font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Resources</p>
+                        <p style = "font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Clients</p>
+                        <p style = "font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Careers</p>
+                        <p style = "font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Contact Us</p>
+                    </div>    
+                </div>
+            </footer>
+
+
+
+       <script>
+        function growth_values(value_name){
+            var i,x,tablinks;
+            x = document.getElementsByClassName("growth_values");
+            for(i=0;i<x.length;i++){
+                x[i].style.display = "none";
+            }
+            x = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active-tab", "");
+            }
+            document.getElementById(value_name).style.display = "block";
+            event.currentTarget.className += " active-tab"                     
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById("defaultOpen").click();
+        });
+       </script>
+       <script>
+        //Adding event listeners to our_services
+        
+        const nav_items = [{dropdown: "about_id",
+                            button: "about_button",
+                            children: [
+                                {
+                                    id:"enterprise_software",
+                                    content:`<div>
+                                                Elevate your business with custom software solutions tailored to your unique
+                                                needs. Our enterprise software development expertise ensures robust,
+                                                scalable, and high-performance applications designed to empower your
+                                                operations and streamline workflows.
+                                            </div>`,
+                                },
+                                {
+                                    id:"business_analytics",
+                                    content:`<div>
+                                    Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                    Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                    with precision and foresight.
+                                    </div>`,
+                                },
+                                {
+                                    id:"software_mordernization",
+                                    content:`<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                        By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                        secure, and aligned with current technologies.</div>`,
+                                },
+                                {
+                                    id:"cloud_migration",
+                                    content:`Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                    secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                    and cost-effectiveness of your IT infrastructure.`,
+                                }
+                                
+                            ]
+                            },
+                           {
+                            dropdown: 'services_id', 
+                            button: "services_button",
+                            children: [
+                                {
+                                    id:"enterprise_software",
+                                    content:`<div>
+                                                Elevate your business with custom software solutions tailored to your unique
+                                                needs. Our enterprise software development expertise ensures robust,
+                                                scalable, and high-performance applications designed to empower your
+                                                operations and streamline workflows.
+                                            </div>`,
+                                },
+                                {
+                                    id:"business_analytics",
+                                    content:`<div>
+                                    Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                    Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                    with precision and foresight.
+                                    </div>`,
+                                },
+                                {
+                                    id:"software_mordernization",
+                                    content:`<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                        By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                        secure, and aligned with current technologies.</div>`,
+                                },
+                                {
+                                    id:"cloud_migration",
+                                    content:`Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                    secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                    and cost-effectiveness of your IT infrastructure.`,
+                                }
+                                
+                            ]
+                            },
+                           {dropdown: 'resources_id',
+                            button: "resources_button",
+                            children: [
+                                {
+                                    id:"enterprise_software",
+                                    content:`<div>
+                                                Elevate your business with custom software solutions tailored to your unique
+                                                needs. Our enterprise software development expertise ensures robust,
+                                                scalable, and high-performance applications designed to empower your
+                                                operations and streamline workflows.
+                                            </div>`,
+                                },
+                                {
+                                    id:"business_analytics",
+                                    content:`<div>
+                                    Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                    Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                    with precision and foresight.
+                                    </div>`,
+                                },
+                                {
+                                    id:"software_mordernization",
+                                    content:`<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                        By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                        secure, and aligned with current technologies.</div>`,
+                                },
+                                {
+                                    id:"cloud_migration",
+                                    content:`Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                    secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                    and cost-effectiveness of your IT infrastructure.`,
+                                }
+                                
+                            ]
+                            },
+                           {dropdown: "clients_id",
+                            button: "client_button",
+                            children: [
+                                {
+                                    id:"enterprise_software",
+                                    content:`<div>
+                                                Elevate your business with custom software solutions tailored to your unique
+                                                needs. Our enterprise software development expertise ensures robust,
+                                                scalable, and high-performance applications designed to empower your
+                                                operations and streamline workflows.
+                                            </div>`,
+                                },
+                                {
+                                    id:"business_analytics",
+                                    content:`<div>
+                                    Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                    Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                    with precision and foresight.
+                                    </div>`,
+                                },
+                                {
+                                    id:"software_mordernization",
+                                    content:`<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                        By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                        secure, and aligned with current technologies.</div>`,
+                                },
+                                {
+                                    id:"cloud_migration",
+                                    content:`Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                    secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                    and cost-effectiveness of your IT infrastructure.`,
+                                }
+                                
+                            ]
+                        },
+                           {dropdown: 'careers_id', 
+                           button: "career_button",
+                           children: [
+                                {
+                                    id:"enterprise_software",
+                                    content:`<div>
+                                                Elevate your business with custom software solutions tailored to your unique
+                                                needs. Our enterprise software development expertise ensures robust,
+                                                scalable, and high-performance applications designed to empower your
+                                                operations and streamline workflows.
+                                            </div>`,
+                                },
+                                {
+                                    id:"business_analytics",
+                                    content:`<div>
+                                    Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                    Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                    with precision and foresight.
+                                    </div>`,
+                                },
+                                {
+                                    id:"software_mordernization",
+                                    content:`<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                        By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                        secure, and aligned with current technologies.</div>`,
+                                },
+                                {
+                                    id:"cloud_migration",
+                                    content:`Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                    secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                    and cost-effectiveness of your IT infrastructure.`,
+                                }
+                                
+                            ]
+                        }]
+                            
+        nav_items.forEach(element => {
+            const servicesPlaceholder = document.getElementById(element.dropdown);
+            const toggleButton = document.getElementById(element.button);
+        toggleButton.addEventListener("click",function(){
+    
+            if(servicesPlaceholder.classList.contains("placeholder")){
+                servicesPlaceholder.classList.remove("placeholder")
+                servicesPlaceholder.classList.add("show-placeholder")
+            }
+            else if(servicesPlaceholder.classList.contains("show-placeholder")){
+                servicesPlaceholder.classList.remove("show-placeholder")
+                servicesPlaceholder.classList.add("placeholder")
+            }
+        })
+        });
+        nav_items[1].children.forEach(element =>{
+            const serviceChild = document.getElementById(element.id);
+            serviceChild.addEventListener("click",function(){
+                const content = document.getElementById("content_window")
+                content.innerHTML=element.content
+            })
+            
+        })
+        
+    </script>     
+       
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>  
