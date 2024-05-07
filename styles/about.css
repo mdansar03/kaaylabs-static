@@ -1,0 +1,50 @@
+#about_us_text{
+    display:flex;
+    justify-content: center;
+    margin-top:2rem;
+}
+#about_us_desc{
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    color:#035485;
+}
+#introduction{
+    color:#00000052;
+    margin-left:150px;
+    margin-top:20px;
+}
+#office_view{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#Values_content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#growth_section{
+margin-top:20px;
+margin-bottom: 20px;
+}
+#values{
+color: rgba(0, 0, 0, 1);
+margin-left:30px;
+
+}
+#growth_result{
+color: rgba(3, 84, 133, 1);
+margin-left: 30px;
+display:flex;
+justify-content: start;
+align-items: start;
+}
+#growth_vision{
+color: rgba(0, 0, 0, 0.32);
+margin-left:30px;
+
+}
+.row{
+margin-bottom: 10px;
+}
