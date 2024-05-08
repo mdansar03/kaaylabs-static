@@ -1,170 +1,171 @@
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .navbar-custom {
-    background-color: #035485;
-    color: white;
-    text-align: left;
-    position:relative;
+  background-color: #035485;
+  color: white;
+  text-align: left;
+  position: relative;
 }
 /* Modify brand and text color */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a, a:visited, a:hover, a:active {
-    color: inherit;
-  }
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
 
-.placeholder{
-    display: none;
-    height:0;   
+.placeholder {
+  display: none;
+  height: 0;
 }
 .btn:focus {
-    outline: none !important;
-    box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .btn:active {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
-.show-placeholder{
-    display:block;
-    height:60vh;
-    position: absolute;
-    z-index: 1;
-    background-color: #035485;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top:100%;
-    width:100vw;
-    transition:height 1s ease;
-   
+.show-placeholder {
+  display: block;
+  height: 60vh;
+  position: absolute;
+  z-index: 1;
+  background-color: #035485;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  width: 100vw;
+  transition: height 1s ease;
 }
-.carousel-caption{
-    position: absolute;
-    bottom: 50px; /* Adjust if you want the caption at a different vertical position */
-    left: 0;
-    width: 100%;
-    right: 0;
-    text-align: left;
-    padding-left: 15px; /* Add padding to ensure text does not stick to the edge */
-    padding-right: 15px;
-        }
-.btn{
-    margin-right: 50px;
-    margin-left:10px;
-    padding-left: 30px;
-    padding-right:30px;
-    border-radius:40px;
-    border: 0;
-    color:white;
-    font-family: "Raleway";
-    font-size: 18px;
+.carousel-caption {
+  position: absolute;
+  bottom: 50px; /* Adjust if you want the caption at a different vertical position */
+  left: 0;
+  width: 100%;
+  right: 0;
+  text-align: left;
+  padding-left: 15px; /* Add padding to ensure text does not stick to the edge */
+  padding-right: 15px;
 }
-#kaay_labs_title{
-    margin-top: 60px;
-    margin-bottom: 60px;
-    
+.btn {
+  margin-right: 50px;
+  margin-left: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 40px;
+  border: 0;
+  color: white;
+  font-family: "Raleway";
+  font-size: 18px;
 }
-#Explore_all{
-    padding-left: 30px;
-    padding-right:30px;
-    border-radius:40px;
-    color:black;
-    border-color: black;
-    border-width: 1px;
+#kaay_labs_title {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-#service_desc_plus_icons{
-    margin-left: 150px;
-    margin-right:50px;
+#Explore_all {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 40px;
+  color: black;
+  border-color: black;
+  border-width: 1px;
 }
-#Blog_posts{
-    margin-right: 50px;
-    margin-left:50px;
-    padding-left: 50px;
-    padding-right:50px;
-    margin-bottom:100px;
+#service_desc_plus_icons {
+  margin-left: 150px;
+  margin-right: 50px;
 }
-#approach{
-    padding-top: 50px;
+#Blog_posts {
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 100px;
 }
-#our_services{
-    margin-top: 30px;
-    margin-right:30px;
-    margin-left:30px;
-
+#approach {
+  padding-top: 50px;
 }
-#digital_strat_desc{
-    margin-top: 30px;
-    margin-bottom:30px;
+#our_services {
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
-#Explore_all{
-    margin-top: 30px;
-    margin-left: 0px;
-    margin-right:0px;
-    align-items: center;
+#digital_strat_desc {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-#approach_step{
-    margin-top:100px;
-    margin-left:0;
-    margin-bottom:100px;
+#Explore_all {
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: center;
 }
-#case_study_row{
-    padding-right:0px;
-    padding:0px;
+#approach_step {
+  margin-top: 100px;
+  margin-left: 0;
+  margin-bottom: 100px;
 }
-#case_study{
-    padding-right: 0px;
-    padding-left:0px;
-    margin-right: 0px;
-    margin-left:0px;
-    width:100%;
+#case_study_row {
+  padding-right: 0px;
+  padding: 0px;
 }
-.container-fluid{
-    padding-right: 0px;
-    padding-left: 0px;
+#case_study {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
 }
-#Blog_posts{
-    margin-top:30px;
-    margin-bottom: 70px;
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
 }
-#work_together_img{
-    margin-left:200px;
-    margin-bottom:100px;
-    align-items: center;
-    margin-right: 0px;
+#Blog_posts {
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
-#work_together_text{
-    margin-left: 20px;
-    align-items: right;
+#work_together_img {
+  margin-left: 200px;
+  margin-bottom: 100px;
+  align-items: center;
+  margin-right: 0px;
 }
-#together-text{
-    margin-top:30px;
+#work_together_text {
+  margin-left: 20px;
+  align-items: right;
 }
-#footer_content{
-    background-color: #242424;
-    color:white;
+#together-text {
+  margin-top: 30px;
 }
-#logo{
-    padding-left: 50px;
-    margin-left:30px;
-    margin-right:30px;
-    margin-top: 50px;
-    margin-bottom: 15px;
+#footer_content {
+  background-color: #242424;
+  color: white;
 }
-#social_media_links{
-    margin-left:5px;
-    margin-right:5px;
-    padding-left:5px;
-    padding-right:5px;
+#logo {
+  padding-left: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
-#footer_service_type{
-    margin-top:50px;
-    margin-right:50px;
-    margin-left:50px;
+#social_media_links {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-#footer_address{
-    margin-top:50px;
+#footer_service_type {
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+#footer_address {
+  margin-top: 50px;
 }

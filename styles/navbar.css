@@ -1,10 +1,9 @@
-.active-nav .underline{
-    position: absolute;
-    width: 33px;
-    height: 2.5px;
-    left: 10px;
-    border-radius: 10px;
-    background-color: white;
-    margin-top: 3px;
-
+.active-nav .underline {
+  position: absolute;
+  width: 33px;
+  height: 2.5px;
+  left: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 3px;
 }
