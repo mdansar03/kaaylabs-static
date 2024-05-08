@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang='eng' dir='ltr'>
+
+<head>
+    <meta charset='utf -8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <script src="/scripts/about.js"></script>
+
+
+<body>
+    <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
+        <div class="container-fluid">
+            <img src="/assets/images/All/image_1.png" style="margin-left:85px;">
+            <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
+
+                    <div class="nav-btn-container" id="home_button">
+                        <button class="btn bg-transparent" style="margin-right:5px;"
+                            onclick="showSection('home_section'); setActiveNav('home_button')">
+                            <div style="position: relative;"><a href="/">Home</a>
+                                <div class="underline"></div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="nav-btn-container active-nav" id="about_button">
+                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                            onclick="showSection('about_section'); setActiveNav('about_button')">
+                            <div style="position: relative;"><a href="/about.html">About</a>
+                                <div class="underline"></div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="nav-btn-container" id="services_button">
+                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                            onclick="showSection('services_section'); setActiveNav('services_button')">
+                            <div style="position: relative;">Services &gt;<div class="underline" style="left: 22px;">
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="nav-btn-container" id="resources_button">
+                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                            onclick="showSection('blog_section'); setActiveNav('resources_button')">
+                            <div style="position: relative;">Blog<div class="underline" style="left: 4px;"></div>
+                            </div>
+                        </button>
+                    </div>
+
+
+                    <div class="nav-btn-container" id="career_button">
+                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                            onclick="showSection('careers_section'); setActiveNav('career_button')">
+                            <div style="position: relative;">Careers<div class="underline" style="left: 15px;"></div>
+                            </div>
+                        </button>
+
+                    </div>
+
+
+                    <button class="btn btn-outline-success bg-transparent" style="border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
+                                margin-left:10px;
+                                padding-left: 30px;
+                                padding-right:30px;
+                                border-radius:40px;
+                                color:white;" onclick="showSection('home_section')"> Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <img src="assets/images/All/image_1.png" style="margin-left:85px;">
+        <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse">
+                <button class="btn bg-transparent" id="about_button"
+                    style="margin-left:270px; margin-right:5px;">About</button>
+                <button class="btn bg-transparent" id="services_button"
+                    style="margin-left:-15px; margin-right:5px;">Services</button>
+                <button class="btn bg-transparent" id="resources_button"
+                    style="margin-left:-15px; margin-right:5px;">Resources</button>
+                <button class="btn bg-transparent" id="client_button"
+                    style="margin-left:-15px; margin-right:5px;">Clients</button>
+                <button class="btn bg-transparent" id="career_button"
+                    style="margin-left:-15px; margin-right:5px;">Careers</button>
+                <button class="btn btn-outline-success bg-transparent" style="border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
+                            margin-left:10px;
+                            padding-left: 30px;
+                            padding-right:30px;
+                            border-radius:40px;
+                            color:white;"> Contact Us</button>
+            </div>
+        </div>
+    </div>
+    <div class="placeholder" id="about_id">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-transparent" id="enterprise_software">Enterprise Software Development</button>
+                <button class="btn btn-transparent" id="business_analytics"> Business Analytics & Data Engineering
+                </button>
+                <button class="btn btn-transparent" id="software_mordernization">Software Modernization
+                    Re-platforming</button>
+                <button class="btn btn-transparent" id="cloud_migration">Cloud Migration & Optimization</button>
+            </div>
+            <div class="col-md-6" id="content_window">
+                Elevate your business with custom software solutions tailored to your unique needs. Our enterprise
+                software development expertise ensures robust, scalable, and high-performance applications designed to
+                empower your operations and streamline workflows.
+            </div>
+        </div>
+
+    </div>
+    <div class="placeholder" id="services_id">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-md-4">
+                    <button class="btn btn-transparent" id="enterprise_software">Enterprise Software
+                        Development</button>
+                    <button class="btn btn-transparent" id="business_analytics"> Business Analytics & Data Engineering
+                    </button>
+                    <button class="btn btn-transparent" id="software_mordernization">Software Modernization
+                        Re-platforming</button>
+                    <button class="btn btn-transparent" id="cloud_migration">Cloud Migration & Optimization</button>
+                </div>
+            </div>
+            <div class="col-md-6" id="content_window">
+                Elevate your business with custom software solutions tailored to your unique needs. Our enterprise
+                software development expertise ensures robust, scalable, and high-performance applications designed to
+                empower your operations and streamline workflows.
+            </div>
+        </div>
+
+    </div>
+    <div class="placeholder" id="resources_id">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-md-4">
+                    <button class="btn btn-transparent" id="enterprise_software">Enterprise Software
+                        Development</button>
+                    <button class="btn btn-transparent" id="business_analytics"> Business Analytics & Data Engineering
+                    </button>
+                    <button class="btn btn-transparent" id="software_mordernization">Software Modernization
+                        Re-platforming</button>
+                    <button class="btn btn-transparent" id="cloud_migration">Cloud Migration & Optimization</button>
+                </div>
+            </div>
+            <div class="col-md-6" id="content_window">
+                Elevate your business with custom software solutions tailored to your unique needs. Our enterprise
+                software development expertise ensures robust, scalable, and high-performance applications designed to
+                empower your operations and streamline workflows.
+            </div>
+        </div>
+    </div>
+    <div class="placeholder" id="clients_id">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-md-4">
+                    <button class="btn btn-transparent" id="enterprise_software">Enterprise Software
+                        Development</button>
+                    <button class="btn btn-transparent" id="business_analytics"> Business Analytics & Data Engineering
+                    </button>
+                    <button class="btn btn-transparent" id="software_mordernization">Software Modernization
+                        Re-platforming</button>
+                    <button class="btn btn-transparent" id="cloud_migration">Cloud Migration & Optimization</button>
+                </div>
+            </div>
+            <div class="col-md-6" id="content_window">
+                Elevate your business with custom software solutions tailored to your unique needs. Our enterprise
+                software development expertise ensures robust, scalable, and high-performance applications designed to
+                empower your operations and streamline workflows.
+            </div>
+        </div>
+    </div>
+    <div class="placeholder" id="careers_id">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-md-4">
+                    <button class="btn btn-transparent" id="enterprise_software">Enterprise Software
+                        Development</button>
+                    <button class="btn btn-transparent" id="business_analytics"> Business Analytics & Data Engineering
+                    </button>
+                    <button class="btn btn-transparent" id="software_mordernization">Software Modernization
+                        Re-platforming</button>
+                    <button class="btn btn-transparent" id="cloud_migration">Cloud Migration & Optimization</button>
+                </div>
+            </div>
+            <div class="col-md-6" id="content_window">
+                Elevate your business with custom software solutions tailored to your unique needs. Our enterprise
+                software development expertise ensures robust, scalable, and high-performance applications designed to
+                empower your operations and streamline workflows.
+            </div>
+        </div>
+    </div>
+
+    </nav>
+
+    <div id="about_us_text">
+        <div class="row">
+            <p id="about_us" style="opacity:30%; font-size: 20px; font-family: Raleway; font-weight:600; 
+            color:rgba(0, 0, 0, 1);margin-left:-10px;margin-bottom: -5px;;">ABOUT US</p>
+            <div class="col-md-12"
+                style="font-size: 48px; font-family: Playfair Display;font-weight:500; margin-left:-10px;">
+                <h1 id="about_us_desc"
+                    style="font-size: 48px; font-family: Playfair Display;font-weight:500; margin-top: 2rem;">Your
+                    one-stop shop for all things digital:<br>
+                    From web development to cutting-edge AI,<br>
+                    we've got you covered.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid col-md-12" id="office_view">
+        <img src="assets/images/All/about_us_first.png">
+    </div>
+    <div class="col-md-10 center " style="display: flex; justify-content: center; width: 100%;" id="introduction">
+        <p id="introduction" style="font-family: Raleway; font-size:18px; color:rgba(0, 0, 0, 0.32); width: 65%;">
+            At KaayLabs, we're a passionate team of digital experts who are driven by helping our clients achieve their
+            goals.
+            We offer a wide range of services, from web development and design to marketing and AI solutions. Founded in
+            2015 by
+            industry veteran Krishnan Naranapatty, who boasts over 30 years of experience, we've grown into a trusted
+            partner for
+            businesses of all sizes. With a commitment to innovation and exceptional service, we're here to help you
+            take your
+            digital presence to the next level.
+
+        </p>
+    </div>
+
+<div class="value-container" style="padding-bottom: 5rem; background: #fafafa; margin-bottom: 5rem;">
+    <div style="padding: 80px 80px 40px 80px;">
+        <div class="row" id="growth_result">
+            <p style="font-size:20px; opacity:30%; font-family: Raleway; color:rgba(0, 0, 0, 1);
+                    padding-top: 30px; padding-bottom:0px;">
+                OUR VALUES
+            </p>
+            <div class="col-md-8">
+                <h1 style="font-size:32px; font-family: Playfair Display; color:#035485" ;>
+                    Growth is never by mere chance;
+                    <br>
+                    it is the result of forces working together.
+                </h1>
+            </div>
+        </div>
+        <div class="row" id="growth_vision">
+            <div class="col-md-8">
+                <p style="font-size:20px; opacity:30%; font-family: Raleway; color:rgba(0, 0, 0, 1);">
+                    We believe that growth comes from combining the vision of our clients
+                    with the expertise of our team. We foster a culture of innovation and collaboration,
+                    where diverse perspectives come together to create cutting-edge solutions for our clients.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-container" style="display: flex; justify-content: center;width: 100%;">
+        <div class="tab-block" style="width: 80%;">
+            <div class="tab">
+                <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Transparency')">Transparency</button>
+                <button class="tablinks" onclick="openTab(event, 'Commitment')">Commitment</button>
+                <button class="tablinks" onclick="openTab(event, 'HardWork')">Hard Work</button>
+                <button class="tablinks" onclick="openTab(event, 'Excellence')">Excellence</button>
+            </div>
+
+
+            <div id="Transparency" class="tabcontent">
+                <p>We are 100% transparent internally, and we've found that our clients absolutely love it. We have
+                    nothing to
+                    hide. We have no secrets. (Well, we do have secrets, but we are comfortable sharing them.)</p>
+            </div>
+
+            <div id="Commitment" class="tabcontent">
+                <p> We are committed to our clients’ success and go the extra mile to ensure their satisfaction</p>
+            </div>
+
+            <div id="HardWork" class="tabcontent">
+                <p>We believe in rolling up our sleeves and putting in the hard work to get the job done right</p>
+            </div>
+
+            <div id="Excellence" class="tabcontent">
+                <p>We believe in rolling up our sleeves and putting in the hard work to get the job done right.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src="assets/images/All/about/group_image_1.png" class="gallery__img" alt="Image 1">
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src="assets/images/All/about/group_image_2.png" class="gallery__img" alt="Image 2">
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src="assets/images/All/about/group_image_3.png" class="gallery__img" alt="Image 3">
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src="assets/images/All/about/group_image_4.png" class="gallery__img" alt="Image 4">
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img src="assets/images/All/about/group_image_5.png" class="gallery__img" alt="Image 5">
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img src="assets/images/All/about/group_image_6.png" class="gallery__img" alt="Image 6">
+        </figure>
+      </div>
+    <!-- Image Gallery -->
+
+    <!-- Platform -->
+    <div class="platform-container" style="margin-bottom:50px;">
+        <p style="color:#035485; text-align: center; font-size: 32px;
+                 font-family:Playfair Display; margin-top:30px; ">Platform Partner</p>
+        <div class="platform-row" style="justify-content: center; display: flex;">
+            <div class="col-sm-2 d-flex justify-content-center" style="margin-top:40px; margin-right:20px;">
+                <img src="assets/images/All/mysql.png">
+            </div>
+            <div class="col-sm-2 d-flex justify-content-center" style="margin-top:40px; margin-right:20px;">
+                <img style="width: 160; height: 100px;" src="assets/images/All/about/sql_img.png">
+            </div>
+            <div class="col-sm-2 d-flex justify-content-center" style="margin-top:40px; margin-right:60px;">
+                <img src="assets/images/All/java.png">
+            </div>
+            <div class="col-sm-2 d-flex justify-content-center" style="margin-top:60px; margin-right:60px;">
+                <img style="width: 180px; height: 70px;" src="assets/images/All/dotnet.png">
+            </div>
+            <div class="col-sm-2 d-flex justify-content-center" style="margin-top:60px; margin-right:20px;">
+                <img src="assets/images/All/nodejs.png">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="full-width-container" style="margin-left: 0;margin-right: 0; 
+                                                         background-color: #000000;width:100%; padding-top:50px;
+                                                         padding-bottom:50px;margin-top:0;">
+        <div class="row">
+            <div class="col-md-5">
+                <h1 style="font-size:36px;font-family:Raleway; color: rgba(255, 255, 255, 1); margin-left:40px; font-weight:600px;
+                        margin-top:50px;margin-left:120px; width:400px;">
+                    Advance your vision<br>
+                    for a brighter future
+                </h1>
+            </div>
+            <div class="col-md-3">
+                <p
+                    style="font-size:18px;font-family:Raleway; color: rgba(255, 255, 255, 1); margin-top:50px; opacity: 40%;">
+                    Call us on<br></p>
+                <p style="font-size:36px;font-family:Raleway; color: rgba(255, 255, 255, 1);">+91 98765 43210</p>
+            </div>
+            <div class="col-md-3">
+                <p
+                    style="font-size:18px;font-family:Raleway; color: rgba(255, 255, 255, 1); margin-top:50px; opacity:40%;">
+                    Email us on
+                </p>
+                <p style="font-size:36px;font-family:Raleway; color: rgba(255, 255, 255, 1);">
+                    hello.world@kaaylabs.com
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="sections" style="padding: 6rem 0;">
+        <div class="col">
+            <a>
+                <h1 style="font-family:Raleway; font-size: 54px; color:rgba(0, 0, 0, 1); margin-left:90px;">Home
+                </h1>
+            </a>
+            <p style="font-family:Raleway; font-size: 30px; color:rgba(0, 0, 0, 1); opacity: 30%; margin-left:90px;">01
+            </p>
+        </div>
+        <div class="col">
+            <a>
+                <h1 style="font-family:Raleway; font-size: 54px; color:rgba(0, 0, 0, 1); margin-left:100px;">Services
+                </h1>
+            </a>
+            <p style="font-family:Raleway; font-size: 30px; color:rgba(0, 0, 0, 1); opacity: 30%; margin-left:100px;">02
+            </p>
+        </div>
+        <div class="col">
+            <a>
+                <h1 style="font-family:Raleway; font-size: 54px; color:rgba(0, 0, 0, 1); margin-left:100px;">Blog</h1>
+            </a>
+            <p style="font-family:Raleway; font-size: 30px; color:rgba(0, 0, 0, 1); opacity: 30%; margin-left:100px;">03
+            </p>
+        </div>
+        <div class="col">
+            <a>
+                <h1 style="font-family:Raleway; font-size: 54px; color:rgba(0, 0, 0, 1); margin-left:100px;">Career</h1>
+            </a>
+            <p style="font-family:Raleway; font-size: 30px; color:rgba(0, 0, 0, 1); opacity: 30%; margin-left:100px;">04
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+        </div>
+
+    </div>
+
+    <footer id="footer_content">
+        <div class="row">
+            <div class="col-md-4" id="logo">
+                <img src="assets/images/All/image_1.png">
+                <div class="col">
+                    <img src="assets/images/All/you_tube_logo.png" id="social_media_links">
+                    <img src="assets/images/All/instagram_logo.png" id="social_media_links">
+                    <img src="assets/images/All/facebook_logo.png" id="social_media_links">
+                    <img src="assets/images/All/twitter_logo.png" id="social_media_links">
+                </div>
+            </div>
+            <div class="col-md-3" id="footer_address" style="font-family: Raleway;">
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1)">
+                    Find us at:</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6)">Kaay Spaces No. 3/675 New No. 7,
+                    Sri Krishna Enclave, New beach road,
+                    Kaveri Nagar, kottivakkam.
+                    Chennai, Tamil Nadu - 600041</p>
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1)">
+                    Call us at:</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);">+91 99446 81933</p>
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1.0);margin-bottom: 0;">Email us at :</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 30px;">hello.world@kaaylabs.com
+                </p>
+            </div>
+            <div class="col-md-2" id="footer_service_type" style="font-family: Raleway;">
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1);margin-bottom: 17px;">Site Map</p>
+                <p style="margin-top:10px;font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 20px;">About
+                </p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Services</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Resources</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Clients</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Careers</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Contact Us</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
