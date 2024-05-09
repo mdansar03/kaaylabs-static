@@ -25,10 +25,9 @@
 <body>
     <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
         <div class="container-fluid">
-            <img src="/assets/images/All/image_1.png" style="margin-left:85px;">
+            <img src="assets/images/home/image_1.png" style="margin-left:85px;">
             <div class="collapse navbar-collapse">
                 <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
-
                     <div class="nav-btn-container" id="home_button">
                         <a href="/index.html">
                         <button class="btn bg-transparent" style="margin-right:5px;"
@@ -38,7 +37,6 @@
                             </div>
                         </button></a>
                     </div>
-
                     <div class="nav-btn-container active-nav" id="about_button">
                         <a href="/about.html"><button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
                             onclick="showSection('about_section'); setActiveNav('about_button')">
@@ -63,14 +61,12 @@
                     </div>
 
                     <div class="nav-btn-container" id="resources_button">
-                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
-                            onclick="showSection('blog_section'); setActiveNav('resources_button')">
-                            <div style="position: relative;">Blog<div class="underline" style="left: 4px;"></div>
+                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                            <div style="position: relative;"><a href="/blog.html">Blog</a>
+                                <div class="underline" style="left: 4px;"></div>
                             </div>
                         </button>
                     </div>
-
-
                     <div class="nav-btn-container" id="career_button">
                         <a href="/careers.html">
                         <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
@@ -80,14 +76,21 @@
                             </div>
                         </button></a>
                     </div>
-
-
-                    <button class="btn btn-outline-success bg-transparent" style="border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
-                                margin-left:10px;
-                                padding-left: 30px;
-                                padding-right:30px;
-                                border-radius:40px;
-                                color:white;" onclick="showSection('home_section')"> Contact Us</button>
+                    <a href="/contact-us.html">
+                        <button class="btn btn-outline-success bg-transparent" style="
+                            border:2px solid white; 
+                            margin-left:-10px; 
+                            font-family:Raleway;
+                            font-size:18px;
+                            margin-right: 50px;
+                            margin-left:10px;
+                            padding-left: 30px;
+                            padding-right:30px;
+                            border-radius:40px;
+                            color:white;" onclick="showSection('home_section')">
+                            Contact Us
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
