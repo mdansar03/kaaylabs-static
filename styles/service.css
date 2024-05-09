@@ -1,0 +1,218 @@
+#blue_background{
+    background-color: #035485;
+    color:white;
+    padding-left: 5rem;
+   }
+   #service_titles{
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+   }
+   #service_desc{
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-family: "Raleway";
+    font-size:16px;
+   }
+
+/* Enterprise styles */
+
+#title_card{
+    width:20rem;
+    background-color: #035485;
+    border-radius: 0;
+}
+
+#start_image{
+    margin-bottom:240px;
+    display: flex;
+    justify-content: center;
+}
+.overlay-text {
+    position: absolute;
+    text-align: center;
+    margin-top:15px;
+    margin-left:15px;
+    top: 30%; /* Adjust as per your design */
+    left: 15%; /* Adjust as per your design */
+    color: white;
+}
+
+.overlay-box {
+    background-color: #035485; /* Sample color */
+    position: absolute;
+    bottom: -45%; /* Adjust as per your design */
+    left: 5%; /* Adjust as per your design */
+    padding-top: 50px;
+    padding-left:30px;
+    color: white;
+    width: 659px; 
+    height:381px;/* Adjust as per your design */
+    margin-bottom: 160px;
+}
+
+.background-image {
+    position: relative;
+    text-align: left;
+    color: white;
+    background: url('/assets/images/All/Enterprise_dev.png') no-repeat center center;
+    background-size: auto;
+    height: 700px;
+    width:1280px;
+    margin-top:40px;
+    }
+#contact_us{
+    background-color: #035485;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top:20px;
+    margin-left:10px;
+    border-radius: 0;
+    width:218;
+    height:64;
+    font-size: 24px;
+    font-family:"Raleway";
+}
+#enterprises_text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#section_2{
+    margin-left:50px;
+    margin-right:30px;
+    font-family: "Raleway";
+    margin-top: 40px;
+}
+#sec_2_text_div{
+    margin-left:50px;
+}
+#section_2_text{
+    margin-left:300px;
+    font-size:28px;
+}
+
+#section_3{
+    margin-top:30px;
+    margin-left:30px; 
+    margin-bottom:100px;  
+}
+#section_3_head{
+    color:#035485;
+    font-size:32px;
+    font-family: "Playfair Display";  
+}
+#section_3_text{
+    font-family: "Raleway";
+    font-size:16px;
+    color:rgba(0, 0, 0, 0.6);
+}
+#dev{
+    width:100vw;
+}
+#Dev_suit{
+    margin-top:10px;
+    margin-left:30px;
+    font-family: "Playfair Display";
+    font-size:36px;
+}
+#vl{
+    display:inline-block;
+    width:0px;
+    margin-left:100px;
+    border-left:1px solid rgba(0, 0, 0, 1);
+    height:300px;
+    margin-right:140px;
+    right:-30px;
+    padding-left: 0px;;
+    padding-right:0;
+}
+#dev_solutions{
+    margin-left:40px;
+    border-left:100px;
+    font-size:16px;
+    color:rgba(0, 0, 0, 0.6);
+    font-family:"Raleway";
+    left:30px;
+
+}
+#page_start{
+    margin-bottom:30px;
+    margin-top:20px;
+}
+#blue_text{
+    color:#035485;
+}
+
+#work_together{
+    margin-top:30px;
+}
+#work_together_img{
+    margin-left:200px;
+    margin-bottom:100px;
+    align-items: center;
+    margin-right: 0px;
+}
+#work_together_text{
+    margin-left: 50px;
+    align-items: right;
+}
+#together-text{
+    margin-top:30px;
+    margin-top: 30px;
+}
+#footer_content{
+    background-color: #242424;
+    color:white;
+}
+#logo{
+    padding-left: 50px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+#social_media_links{
+    margin-left:5px;
+    margin-right:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+#footer_service_type{
+    margin-top:50px;
+    margin-right:50px;
+    margin-left:250px;
+}
+#footer_address{
+    margin-top:50px;
+}
+
+#contact{
+    margin-right: 50px;
+    margin-left:10px;
+    padding-left: 30px;
+    padding-right:30px;
+    border-radius:40px;
+    color:white;
+    font-family:"Raleway";
+    font-size:18px;
+}
+.show-placeholder-active{
+    display:none;
+    position: absolute;
+    z-index: 1;
+    background-color: #035485;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top:100%;
+    width:100vw;
+    transition:height 1s ease;
+   
+}
+
+.active-placeholder {
+    display: block;
+}

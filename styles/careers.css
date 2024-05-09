@@ -23,17 +23,6 @@
 .btn:active {
   box-shadow: none !important;
 }
-.show-placeholder {
-  display: block;
-  height: 60vh;
-  position: absolute;
-  z-index: 1;
-  background-color: #035485;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  top: 100%;
-  width: 100vw;
-  transition: height 1s ease;
-}
 
 #blue_text {
   color: #035485;
