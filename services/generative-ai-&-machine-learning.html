@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang='eng' dir='ltr'>
+
+<head>
+    <meta charset='utf -8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/generative-ai.css">
+
+<body>
+    <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
+        <div class="container-fluid">
+            <img src="/assets/images/home/image_1.png" style="margin-left:85px;">
+            <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
+                    <div class="nav-btn-container" id="home_button">
+                        <a href="index.html">
+                            <button class="btn bg-transparent" style="margin-right:5px;">
+                                <div style="position: relative;">Home
+                                    <div class="underline"></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="nav-btn-container" id="about_button">
+                        <a href="/about.html">
+                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                <div style="position: relative;">About
+                                    <div class="underline"></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="nav-btn-container" id="services_button">
+                        <a href="/services.html">
+                            <button class="btn bg-transparent active-nav" style="margin-left:-15px; margin-right:5px;">
+                                <div style="position: relative;">Services<svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-chevron-right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    <div class="underline" style="left: 22px;">
+                                    </div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="nav-btn-container" id="resources_button">
+                        <a href="/blog.html">
+                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                <div style="position: relative;">Blog
+                                    <div class="underline" style="left: 4px;"></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="nav-btn-container" id="career_button">
+                        <a href="/careers.html">
+                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                <div style="position: relative;">Careers
+                                    <div class="underline" style="left: 15px;">
+                                    </div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                    <a href="contact-us.html">
+                        <button class="btn btn-outline-success bg-transparent" style="border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
+                            margin-left:10px;
+                            padding-left: 30px;
+                            padding-right:30px;
+                            border-radius:40px;
+                            color:white;" onclick="showSection('home_section')"> Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="generative-ai-content" id="start_image">
+        <div class="background-image">
+            <img src='/assets/images/All/GenAi.png' style="width: 100%; height: 700px;" />
+            <div class="overlay-text">
+                <h1 class="generate-heading">Generative AI and Machine Learning</h1>
+            </div>
+
+            <div class="overlay-box">
+                <p class="card-text">
+                    "Refine your operations with Kaay Labs' <br>
+                    software expertise. Our solutions, tailored<br>
+                    to your industry,enhance processes,<br>
+                    teamwork and your market position in today's digital arena."
+                </p>
+                <a href="/contact-us.html">
+                    <button class="btn" id="contact_us">Contact Us</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="row harness-container">
+            <div class="col-md-6" style="text-align: center;">
+                <img src="/assets/images/All/girl_with_robot.png">
+            </div>
+            <div id="genAi_text" class="col-md-6">
+                <p class="recognize-prg">
+                    Harness the power of generative AI to create innovative solutions and unlock new possibilities for
+                    your business. KaayLabs is a leading provider of generative AI development services, with a team of
+                    experts who can help you conceptualize, develop, and implement cutting-edge AI solutions tailored to
+                    your specific needs.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row what-generate-content">
+        <div id="GenAi" class="col-md-6">
+            <h1 id="blue_text">
+                What is Generative AI?
+            </h1>
+            <p class="generate-prg">
+                Generative AI is a subfield of artificial intelligence (AI) focused on creating
+                new data, like text, images, code, or music. Generative AI models are
+                trained on massive datasets of existing data, and they learn to identify
+                patterns and relationships within that data. This enables them to generate
+                entirely new and original creative text formats, like poems, code, scripts,
+                musical pieces, email, letters, etc., never seen before but consistent with
+                the style and content of the training data.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="/assets/images/All/kid_bot.png">
+        </div>
+    </div>
+
+
+    <div class="row generate-serevice">
+        <div class="col-md-6" id="Ai_services">
+            <h1 id="blue_text">
+                Generative AI Services Offered by KaayLabs
+            </h1>
+            <p style="font-family:Raleway; font-size:16px; color: rgba(100, 100, 100, 1);">At KaayLabs, we offer a
+                comprehensive range of generative AI services to help you transform<br>
+                your business. Here are some of the areas where we can help:</p>
+        </div>
+        <div class="row" id="service_card_row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-title" id="service_title">
+                        Content creation
+                    </div>
+                    <div class="card-body card-body-service">
+                        Generate high-quality, engaging content<br>
+                        including product descriptions, marketing<br>
+                        copy, social media posts, and more.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-title" id="service_title">
+                        Image generation
+                    </div>
+                    <div class="card-body card-body-service">
+                        Create unique and original images for<br>
+                        your website, marketing materials, or<br>
+                        product designs.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-title" id="service_title">
+                        Code generation
+                    </div>
+                    <div class="card-body card-body-service">
+                        Automate repetitive coding tasks and<br>
+                        generate code snippets based on<br>
+                        your specifications.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="service_card_row">
+            <div class="col-md-4" style="padding-top:10px;">
+                <div class="card">
+                    <div class="card-title" id="service_title">
+                        Music generation
+                    </div>
+                    <div class="card-body card-body-service">
+                        Compose unique soundtracks or musical<br>
+                        pieces to enhance your projects.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="padding-top:10px;">
+                <div class="card">
+                    <div class="card-title" id="service_title">
+                        Chatbots
+                    </div>
+                    <div class="card-body card-body-service">
+                        Develop chatbots that can provide<br>
+                        customer support, answer questions, and<br>
+                        engage with your audience.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="padding-top:10px;">
+                <div class="card">
+                    <div class="card-title" id="service_title" style="width:400px;  font-family: Raleway;
+                            color: rgba(0, 0, 0, 1);font-size:20px;font-weight: 500; padding-top:30px;">
+                        Data augmentation
+                    </div>
+                    <div class="card-body card-body-service">
+                        Generate synthetic data to improve the<br>
+                        performance of your machine<br>
+                        learning models.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="blue_background">
+        <h1 id="benifite-title">
+            Benefits of Generative AI
+        </h1>
+        <p style="font-family: Raleway; font-size: 16px; color:rgba(255, 255, 255, 1);">
+            Generative AI offers a wide range of benefits for businesses, including:
+        </p>
+        <div class="row" style="padding-top: 1rem;">
+            <div class="col-md-3">
+                <div class="card" id="benefits_of_AI" style="padding-top: 20px; padding-left: 10px; height:200px;">
+                    <div class="card-title" style="font-family:Raleway; font-size:20px;">
+                        Increased Efficiency
+                    </div>
+                    <div class="card-body"
+                        style="padding-top: 20px; padding-left: 0px;font-family:Raleway; font-size:16px; color:rgba(255, 255, 255, 0.5);">
+                        Automate repetitive tasks &<br>
+                        free up your team to focus<br>
+                        on more strategic initiatives.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" id="benefits_of_AI" style="padding-top: 20px; padding-left: 10px; height:200px;">
+                    <div class="card-title" style="font-family:Raleway; font-size:20px;">
+                        Enhanced Creativity
+                    </div>
+                    <div class="card-body"
+                        style="padding-top: 20px; padding-left: 0px;font-family:Raleway; font-size:16px; color:rgba(255, 255, 255, 0.5);">
+                        Explore new ideas and generate<br>
+                        creative content that would be<br>
+                        difficult or time-consuming<br>
+                        to produce manually.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" id="benefits_of_AI" style="padding-top: 20px; padding-left: 10px; height:200px;">
+                    <div class="card-title" style="font-family:Raleway; font-size:20px;">
+                        Improved Customer Engagement
+                    </div>
+                    <div class="card-body"
+                        style=" padding-top: 20px; padding-left: 0px;font-family:Raleway; font-size:16px; color:rgba(255, 255, 255, 0.5);">
+                        Create personalized experiences<br>
+                        and interact with your customers<br>
+                        in new and innovative ways.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card" id="benefits_of_AI" style="padding-top: 20px; padding-left: 10px; height:200px;">
+                    <div class="card-title" style="font-family:Raleway; font-size:20px;">
+                        Reduced Costs
+                    </div>
+                    <div class="card-body" style="padding-left: 0px;font-family:Raleway; font-size:16px; color:rgba(255, 255, 255, 0.5);
+                            ">
+                        Reduce the cost of content<br>
+                        creation, data generation, and<br>
+                        other tasks that can be<br>
+                        automated with generative AI.<br>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="vertical_line">
+        <div id="before_cards">
+            <h1 id="blue_text">
+                Why Choose KaayLabs for Cloud Managed Services?
+            </h1>
+        </div>
+        <div style="padding: 2rem 0;">
+            <div class="row" id="manage-content">
+                <li class="manage-serevice-subtitle">Expertise</li>
+                <p class="manage-serevice-prg" id="desc">
+                    Our team of data scientists, machine learning engineers, and creative technologists possess in-depth
+                    knowledge of generative AI
+                    models and techniques.</p>
+            </div>
+            <div class="row" id="cards_row">
+                <li class="manage-serevice-subtitle">Experience</li>
+                <p class="manage-serevice-prg" id="desc">
+                    We have a proven track record of delivering successful generative AI projects for clients across a
+                    wide
+                    range of industries.
+                </p>
+
+            </div>
+            <div class="row" id="cards_row">
+                <li class="manage-serevice-subtitle">Custom Solutions</li>
+                <p class="manage-serevice-prg">
+                    We take the time to understand your unique business needs and develop custom generative AI solutions
+                    that drive real-world results.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="work_together">
+        <div class="row">
+            <div class="col-md-5" id="work_together_img">
+                <img src="/assets/images/All/work_together.png">
+            </div>
+            <div class="col-md-6" id="work_together_text"
+                style="padding-top:120px; padding-left:0px; font-family: Playfair Display; font-size:44px;">
+                <h1 class="work_together-title">
+                    Let's work together
+                </h1>
+                <p id="together-text" style="font-family:Raleway;
+                    font-size: 20px;
+                    color:rgba(144, 144, 144, 1)">
+                    Get in touch and let's have a chat to see if we're the right fit<br> for each other.
+                    We'd love to get to know you!
+                </p>
+                <a href="contact-us.html">
+                    <p class="text-decoration-underline"
+                        style="font-family: Raleway; font-size: 20px; color:rgba(0, 0, 0, 1)">Discuss your project
+                        with us</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore-container">
+        <div class="row" style="text-align:center">
+            <h1 style="color:#035485; font-size: 40px; font-family:Raleway; margin-bottom:50px; line-height: 40px;
+            letter-spacing: 0.04em;">
+                Explore Other Services
+            </h1>
+            <div class="row" style="margin-bottom:50px; font-family: Raleway; font-size:16px;">
+                <div class="col-sm-3" style="margin-left:150px;">
+                    <li>
+                        <a>Enterprise Software Development</a>
+                    </li>
+                </div>
+                <div class="col-sm-3">
+                    <li>
+                        <a>Cloud Migration and Optimisation</a>
+                    </li>
+                </div>
+                <div class="col-sm-4">
+                    <li>
+                        <a>Business Analytics & Data Engineering</a>
+                    </li>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:50px; font-family: Raleway; font-size:16px;">
+                <div class="col-sm-4" style="margin-left:200px; ">
+                    <li>
+                        <a>Software Mordernization & Re-platforming</a>
+                    </li>
+                </div>
+                <div class="col-sm-4">
+                    <li>
+                        <a>Machine Learning and Gen AI</a>
+                    </li>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer id="footer_content">
+        <div class="row">
+            <div class="col-md-4" id="logo">
+                <img src="/assets/images/All/image_1.png">
+                <div class="col">
+                    <img src="/assets/images/All/you_tube_logo.png" id="social_media_links">
+                    <img src="/assets/images/All/instagram_logo.png" id="social_media_links">
+                    <img src="/assets/images/All/facebook_logo.png" id="social_media_links">
+                    <img src="/assets/images/All/twitter_logo.png" id="social_media_links">
+                </div>
+            </div>
+            <div class="col-md-3" id="footer_address" style="font-family: Raleway;">
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1)">
+                    Find us at:</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6)">Kaay Spaces No. 3/675 New No. 7,
+                    Sri Krishna Enclave, New beach road,
+                    Kaveri Nagar, kottivakkam.
+                    Chennai, Tamil Nadu - 600041</p>
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1)">
+                    Call us at:</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);">+91 99446 81933</p>
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1.0);margin-bottom: 0;">Email us at :</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 30px;">hello.world@kaaylabs.com
+                </p>
+            </div>
+            <div class="col-md-2" id="footer_service_type" style="font-family: Raleway;">
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1);margin-bottom: 17px;">Site Map</p>
+                <p style="margin-top:10px;font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 20px;">About
+                </p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Services</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Resources</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Clients</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Careers</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Contact Us</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        //Adding event listeners to our_services
+
+        const nav_items = [{
+            dropdown: "about_id",
+            button: "about_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        },
+        {
+            dropdown: 'services_id',
+            button: "services_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        },
+        {
+            dropdown: 'resources_id',
+            button: "resources_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        },
+        {
+            dropdown: "clients_id",
+            button: "client_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        },
+        {
+            dropdown: 'careers_id',
+            button: "career_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        }]
+
+        nav_items.forEach(element => {
+            const servicesPlaceholder = document.getElementById(element.dropdown);
+            const toggleButton = document.getElementById(element.button);
+            toggleButton.addEventListener("click", function () {
+
+                if (servicesPlaceholder.classList.contains("placeholder")) {
+                    servicesPlaceholder.classList.remove("placeholder")
+                    servicesPlaceholder.classList.add("show-placeholder")
+                }
+                else if (servicesPlaceholder.classList.contains("show-placeholder")) {
+                    servicesPlaceholder.classList.remove("show-placeholder")
+                    servicesPlaceholder.classList.add("placeholder")
+                }
+            })
+        });
+        nav_items[1].children.forEach(element => {
+            const serviceChild = document.getElementById(element.id);
+            serviceChild.addEventListener("click", function () {
+                const content = document.getElementById("content_window")
+                content.innerHTML = element.content
+            })
+
+        })
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

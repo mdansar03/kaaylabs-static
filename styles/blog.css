@@ -4,7 +4,6 @@
     padding: 3rem 4rem;
 }
 
-
 #blue_text {
     font-family: "Playfair Display";
     color: #035485;
@@ -14,9 +13,11 @@
 #sector_1 {
     padding: 2rem 0;
 }
+
 #sector_1_text {
     position: relative;
 }
+
 .text-content {
     font-family: Raleway;
     font-size: 24px;
@@ -24,6 +25,7 @@
     line-height: 34px;
     letter-spacing: 0.04em;
 }
+
 #list {
     font-size: 16px;
     color: rgba(0, 0, 0, 1);
@@ -162,10 +164,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 0;
+
     &:hover {
         background-color: #FFF;
         color: #000;
     }
+
     &:active {
         background-color: #FFF;
         color: #000;
@@ -190,22 +194,25 @@
 .form-control {
     border-radius: 0;
 }
+
 /* ===blog inner===== */
 
 .digital-marketing-container {
     padding: 3rem 4rem 2rem 4rem;
 }
 
-#section_1{
-    margin-right:0px;
-    margin-left:0px;
-    margin-bottom:30px;
+#section_1 {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px;
 }
-#first_img{
-    height:auto;
-    width:100%;
+
+#first_img {
+    height: auto;
+    width: 100%;
 }
-#heading{
+
+.heading {
     font-family: Raleway;
     font-size: 24px;
     font-weight: 600;
@@ -213,16 +220,19 @@
     letter-spacing: 0.04em;
     padding-bottom: 1rem;
 }
-#text{
+
+#text {
     font-family: Raleway;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.04em;
 }
-#work_together_background{
+
+#work_together_background {
     background-color: black;
 }
+
 .lets-work {
     font-family: Playfair Display;
     font-size: 64px;
@@ -230,8 +240,9 @@
     line-height: 80px;
     letter-spacing: 0.03em;
 }
-#work_together_text{
-    color:white;
+
+#work_together_text {
+    color: white;
     font-family: Raleway;
     font-size: 24px;
     font-weight: 400;
@@ -240,6 +251,30 @@
     padding-top: 5rem;
 }
 
+#list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.item {
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+.active::before {
+    content: "•";
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.active {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    padding: 10px 0px !important;
+}
 
 /* ======== */
 
