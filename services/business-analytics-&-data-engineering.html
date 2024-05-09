@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang='eng' dir='ltr'>
+
+<head>
+    <meta charset='utf -8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/bussiness-analytics.css">
+
+<body>
+    <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
+        <div class="container-fluid">
+            <img src="/assets/images/home/image_1.png" style="margin-left:85px;">
+            <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
+                    <div class="nav-btn-container" id="home_button">
+                        <a href="index.html">
+                            <button class="btn bg-transparent" style="margin-right:5px;">
+                                <div style="position: relative;">Home
+                                    <div class="underline"></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="nav-btn-container" id="about_button">
+                        <a href="/about.html">
+                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                <div style="position: relative;">About
+                                    <div class="underline"></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="nav-btn-container" id="services_button">
+                        <a href="/services.html">
+                            <button class="btn bg-transparent active-nav" style="margin-left:-15px; margin-right:5px;">
+                                <div style="position: relative;">Services<svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-chevron-right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    <div class="underline" style="left: 22px;">
+                                    </div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="nav-btn-container" id="resources_button">
+                        <a href="/blog.html">
+                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                <div style="position: relative;">Blog
+                                    <div class="underline" style="left: 4px;"></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="nav-btn-container" id="career_button">
+                        <a href="/careers.html">
+                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                <div style="position: relative;">Careers
+                                    <div class="underline" style="left: 15px;">
+                                    </div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                    <a href="contact-us.html">
+                        <button class="btn btn-outline-success bg-transparent" style="border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
+                            margin-left:10px;
+                            padding-left: 30px;
+                            padding-right:30px;
+                            border-radius:40px;
+                            color:white;" onclick="showSection('home_section')"> Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="generative-ai-content" id="start_image">
+        <div class="background-image">
+            <img src='/assets/images/All/BA.png' style="width: 100%; height: 700px;" />
+            <div class="overlay-text">
+                <h1 class="generate-heading">Business Analytics & Data Engineering</h1>
+            </div>
+
+            <div class="overlay-box">
+                <p class="card-text">
+                    "Refine your operations with Kaay Labs' <br>
+                    software expertise. Our solutions, tailored<br>
+                    to your industry,enhance processes,<br>
+                    teamwork and your market position in today's digital arena."
+                </p>
+                <a href="/contact-us.html">
+                    <button class="btn" id="contact_us">Contact Us</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="row harness-container">
+            <div class="col-md-6" style="text-align: center;">
+                <img src="/assets/images/All/analytics.png">
+            </div>
+            <div id="genAi_text" class="col-md-6">
+                <p class="recognize-prg">
+                    We recognize the paramount importance of
+                    data in today’s business landscape. Our
+                    mission is to unlock the untapped potential
+                    within your organization’s data, transforming it
+                    into strategic insights that drive growth and innovation.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row what-generate-content">
+        <div id="GenAi" class="col-md-6">
+            <h1 id="blue_text">
+                Why Kaaylabs for BI and Data Engineering?
+            </h1>
+            <p id="ba_text_h" style="padding-bottom: 10px;"><b>
+                    Data Analysis
+                </b></p>
+            <p id="ba_text_p" style="padding-bottom: 10px;">
+                Our data analysts have a knack for spotting trends and weaving
+                together patterns that tell the story behind the numbers, providing
+                actionable insights.
+            </p>
+            <p id="ba_text_h" style="padding-bottom: 10px;"><b>
+                    Infrastructure Engineering
+                </b></p>
+            <p id="ba_text_p" style="padding-bottom: 10px;">
+                Our engineers are adept at constructing sturdy data management
+                systems, ensuring a smooth and reliable foundation for information flow.
+            </p>
+            <p id="ba_text_h" style="padding-bottom: 10px;"><b>
+                    Analytics Innovation
+                </b></p>
+            <p id="ba_text_p" style="padding-bottom: 10px;">
+                Our data scientists skillfully use advanced analytics to spark
+                innovation, turning data into a springboard for fresh ideas
+                and breakthroughs.
+            </p>
+            <div class=" col-sm-5">
+                <a href="/contact-us.html">
+                    <button class="btn ba-btn">Contact Us</button>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="/assets/images/All/chart.png">
+        </div>
+        <div class="technologies-container">
+            <div id="technologies-prg">
+                <p>
+                    Technologies used in <b>Business Analytics &<br>
+                        Data Engineering</b>
+                </p>
+            </div>
+            <div class="row" id="tech_desc">
+                <div class="col-md-6">
+                    <hr style="border-top:3px solid black; width:100px;">
+                    <h3 class="tech-title"><b>Strategy & Architecture</b></h3>
+                    <p id="tech_used">
+                        We would assist you in developing data strategies aligned with your overall objectives, business
+                        or otherwise. Our team will analyze your existing data infrastructure, identify gaps, and
+                        provide recommendations for improvement and even implement the same.In addition, we will
+                        incorporate data governance frameworks and data management policies to ensure data quality,
+                        security, and compliance.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <hr style="border-top:3px solid black; width:100px;">
+                    <h3 class="tech-title"><b>Data Architecture & Engineering</b></h3>
+                    <p id="tech_used">
+                        Our team will help your organization design and build robust data architectures to effectively
+                        manage and process their data. We provide expertise in data modeling, data integration, and data
+                        pipeline development. This service ensures that data flows seamlessly across various systems and
+                        platforms, enabling efficient data management and utilization.
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="tech_desc">
+                <div class="col-md-6">
+                    <hr style="border-top:3px solid black; width:100px;">
+                    <h3 class="tech-title"><b>Modern BI & Analytics</b></h3>
+                    <p id="tech_used">
+                        Deriving valuable insights from any kind of data is the hallmark of a great analysis. Our team
+                        will develop custom solutions for the same through modern business intelligence (BI) and
+                        analytics solutions. We will leverage advanced analytics tools and technologies to extract,
+                        transform, and visualize data, enabling data-driven decision-making. Histopie's expertise in
+                        data visualization, dashboard development, and reporting ensures that you can focus all your
+                        attention on the most important thing, your business.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <hr style="border-top:3px solid black; width:100px;">
+                    <h3 class="tech-title"><b>Data Science and Machine Learning</b></h3>
+                    <p id="tech_used">
+                        We also offer data science and machine learning services to unlock the predictive and
+                        prescriptive power of data. Our team will take your data to the next level by employing
+                        cutting-edge algorithms and techniques to develop models that can uncover patterns, make
+                        predictions, and automate processes. Our data scientists collaborate with clients to identify
+                        use cases, build models, and provide actionable insights for optimized business performance
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="road-map-container">
+        <div class="row">
+            <div class="col-md-12" id="tech_roadmap_text">
+                <p id="tech_used" style="text-align: center;">
+                    We have demonstrated expertise in delivering BI strategy & road-map for several enterprises, we can
+                    help you define clear milestones with a step-by-step plan for achieving the transformation without
+                    huge upfront investments.
+                </p>
+            </div>
+        </div>
+        <div class="row" id="tech_roadmap">
+            <div class="col-md-12" style="text-align: center;">
+                <img src="/assets/images/All/ba_roadmap.png">
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <img src="/assets/images/All/texh_stack.png">
+    </div>
+
+
+    <div id="work_together">
+        <div class="row">
+            <div class="col-md-5" id="work_together_img">
+                <img src="/assets/images/All/work_together.png">
+            </div>
+            <div class="col-md-6" id="work_together_text"
+                style="padding-top:120px; padding-left:0px; font-family: Playfair Display; font-size:44px;">
+                <h1 class="work_together-title">
+                    Let's work together
+                </h1>
+                <p id="together-text" style="font-family:Raleway;
+                    font-size: 20px;
+                    color:rgba(144, 144, 144, 1)">
+                    Get in touch and let's have a chat to see if we're the right fit<br> for each other.
+                    We'd love to get to know you!
+                </p>
+                <a href="contact-us.html">
+                    <p class="text-decoration-underline"
+                        style="font-family: Raleway; font-size: 20px; color:rgba(0, 0, 0, 1)">Discuss your project
+                        with us</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore-container">
+        <div class="row" style="text-align:center">
+            <h1 style="color:#035485; font-size: 40px; font-family:Raleway; margin-bottom:50px; line-height: 40px;
+            letter-spacing: 0.04em;">
+                Explore Other Services
+            </h1>
+            <div class="row" style="margin-bottom:50px; font-family: Raleway; font-size:16px;">
+                <div class="col-sm-3" style="margin-left:150px;">
+                    <li>
+                        <a>Enterprise Software Development</a>
+                    </li>
+                </div>
+                <div class="col-sm-3">
+                    <li>
+                        <a>Cloud Migration and Optimisation</a>
+                    </li>
+                </div>
+                <div class="col-sm-4">
+                    <li>
+                        <a>Business Analytics & Data Engineering</a>
+                    </li>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:50px; font-family: Raleway; font-size:16px;">
+                <div class="col-sm-4" style="margin-left:200px; ">
+                    <li>
+                        <a>Software Mordernization & Re-platforming</a>
+                    </li>
+                </div>
+                <div class="col-sm-4">
+                    <li>
+                        <a>Machine Learning and Gen AI</a>
+                    </li>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer id="footer_content">
+        <div class="row">
+            <div class="col-md-4" id="logo">
+                <img src="/assets/images/All/image_1.png">
+                <div class="col">
+                    <img src="/assets/images/All/you_tube_logo.png" id="social_media_links">
+                    <img src="/assets/images/All/instagram_logo.png" id="social_media_links">
+                    <img src="/assets/images/All/facebook_logo.png" id="social_media_links">
+                    <img src="/assets/images/All/twitter_logo.png" id="social_media_links">
+                </div>
+            </div>
+            <div class="col-md-3" id="footer_address" style="font-family: Raleway;">
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1)">
+                    Find us at:</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6)">Kaay Spaces No. 3/675 New No. 7,
+                    Sri Krishna Enclave, New beach road,
+                    Kaveri Nagar, kottivakkam.
+                    Chennai, Tamil Nadu - 600041</p>
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1)">
+                    Call us at:</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);">+91 99446 81933</p>
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1.0);margin-bottom: 0;">Email us at :</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 30px;">hello.world@kaaylabs.com
+                </p>
+            </div>
+            <div class="col-md-2" id="footer_service_type" style="font-family: Raleway;">
+                <p style="font-size: 20px; color:rgba(255, 255, 255, 1);margin-bottom: 17px;">Site Map</p>
+                <p style="margin-top:10px;font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 20px;">About
+                </p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Services</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Resources</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Clients</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Careers</p>
+                <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Contact Us</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        //Adding event listeners to our_services
+
+        const nav_items = [{
+            dropdown: "about_id",
+            button: "about_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        },
+        {
+            dropdown: 'services_id',
+            button: "services_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        },
+        {
+            dropdown: 'resources_id',
+            button: "resources_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        },
+        {
+            dropdown: "clients_id",
+            button: "client_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        },
+        {
+            dropdown: 'careers_id',
+            button: "career_button",
+            children: [
+                {
+                    id: "enterprise_software",
+                    content: `<div>
+                                                        Elevate your business with custom software solutions tailored to your unique
+                                                        needs. Our enterprise software development expertise ensures robust,
+                                                        scalable, and high-performance applications designed to empower your
+                                                        operations and streamline workflows.
+                                                    </div>`,
+                },
+                {
+                    id: "business_analytics",
+                    content: `<div>
+                                            Unlock insights and drive strategy with our business analytics and data engineering services. 
+                                            Transform data into actionable intelligence and foster a data-driven culture to navigate the complexities of the market 
+                                            with precision and foresight.
+                                            </div>`,
+                },
+                {
+                    id: "software_mordernization",
+                    content: `<div>Rejuvenate your legacy systems with our software modernization and re-platforming services. 
+                                                By updating outdated architectures and migrating to newer, agile platforms, we ensure your software stays competitive, 
+                                                secure, and aligned with current technologies.</div>`,
+                },
+                {
+                    id: "cloud_migration",
+                    content: `Transition to the cloud with confidence. Our cloud migration and optimization services provide a seamless, 
+                                            secure shift from on-premises to cloud environments, improving efficiency, scalability, 
+                                            and cost-effectiveness of your IT infrastructure.`,
+                }
+
+            ]
+        }]
+
+        nav_items.forEach(element => {
+            const servicesPlaceholder = document.getElementById(element.dropdown);
+            const toggleButton = document.getElementById(element.button);
+            toggleButton.addEventListener("click", function () {
+
+                if (servicesPlaceholder.classList.contains("placeholder")) {
+                    servicesPlaceholder.classList.remove("placeholder")
+                    servicesPlaceholder.classList.add("show-placeholder")
+                }
+                else if (servicesPlaceholder.classList.contains("show-placeholder")) {
+                    servicesPlaceholder.classList.remove("show-placeholder")
+                    servicesPlaceholder.classList.add("placeholder")
+                }
+            })
+        });
+        nav_items[1].children.forEach(element => {
+            const serviceChild = document.getElementById(element.id);
+            serviceChild.addEventListener("click", function () {
+                const content = document.getElementById("content_window")
+                content.innerHTML = element.content
+            })
+
+        })
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

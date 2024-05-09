@@ -32,8 +32,8 @@
                     </div>
                     <div class="nav-btn-container" id="about_button">
                         <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                            <div style="position: relative;"><a href="/about.html" class="nav-link"
-                                    id="about-us-link" onclick="loadPage('about-us')">About</a>
+                            <div style="position: relative;"><a href="/about.html" class="nav-link" id="about-us-link"
+                                    onclick="loadPage('about-us')">About</a>
                                 <div class="underline"></div>
                             </div>
                         </button>
@@ -191,11 +191,9 @@
 
             <div class="row" style="align-items: center; justify-content: center; padding-top: 4rem;">
                 <div class="col-sm-2" style="font-family: Raleway; font-size:20px;color:black">
-                    <button 
-                        id="zero_curve_border"
+                    <button id="zero_curve_border"
                         style="border: 1px solid black;background-color: white;width: 202px;height:60px; padding:10px;"
-                        onclick="toggleContainers()"
-                        >
+                        onclick="toggleContainers()">
                         Show More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -246,39 +244,13 @@
         <div class="digital-marketing-container">
             <div class="row">
                 <div class="col-md-4" id="small_text" style="padding-top:220px; font-family: Raleway; font-size: 16px;">
-                    <ul>
-                        <li>
-                            <b style="
-                                font-family: Raleway;
-                                font-size: 16px;
-                                font-weight: 600;
-                                line-height: 16px;
-                                letter-spacing: 0.04em;">
-                                Digital Marketing
-                            </b>
-                        </li>
+                    <ul id="list">
+                        <li class="item active" onclick="activateItem(this)"><a href="#digital-marketing">Digital Marketing</a></li>
+                        <li class="item" onclick="activateItem(this)"><a href="#reach-more-audiences">Reach more audiences</a></li>
+                        <li class="item" onclick="activateItem(this)"><a href="#communication-with-your-customers">Communication with your customers</a></li>
+                        <li class="item" onclick="activateItem(this)"><a href="#target-a-specific-audience">Target a specific audience</a></li>
+                        <li class="item" onclick="activateItem(this)"><a href="#conclusion">Conclusion</a></li>
                     </ul>
-                    <div style="
-                        font-family: Raleway;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 16px;
-                        letter-spacing: 0.04em;
-                        padding-left: 2rem;
-                        ">
-                        <p>
-                            Reach more audiences
-                        </p>
-                        <p>
-                            Communication with your customers
-                        </p>
-                        <p>
-                            Target a specific audience
-                        </p>
-                        <p>
-                            Conclusion
-                        </p>
-                    </div>
                 </div>
                 <div class="col-sm-8">
                     <h1
@@ -306,7 +278,7 @@
                         </div>
                     </div>
                     <div style="padding: 2rem 0; border-bottom: 1px solid;">
-                        <h3 id="heading">
+                        <h3 class="heading" id="digital-marketing">
                             Digital Marketing
                         </h3>
                         <p id="text">
@@ -332,7 +304,7 @@
                             nisi nec feugiat.
                         </p>
                         <img src="assets/images/All/blog_inner_2.png" style="width: 80%; padding: 2rem 0">
-                        <h3 id="heading">
+                        <h3 class="heading" id="reach-more-audiences">
                             Reach more audiences
                         </h3>
                         <p id="text">
@@ -353,7 +325,7 @@
                             Curabitur et enim dignissim, rhoncus ipsum sed, cursus sapien. Ut convallis sollicitudin
                             metus eu dictum.
                         </p>
-                        <h3 id="heading">
+                        <h3 class="heading" id="communication-with-your-customers">
                             Communication with your customers
                         </h3>
                         <p id="text">
@@ -374,7 +346,7 @@
                             Curabitur et enim dignissim, rhoncus ipsum sed, cursus sapien. Ut convallis sollicitudin
                             metus eu dictum.
                         </p>
-                        <h3 id="heading">
+                        <h3 class="heading" id="target-a-specific-audience">
                             Target a Specefic Audience
                         </h3>
                         <p id="text">
@@ -396,7 +368,7 @@
                             metus eu dictum.
                         </p>
                         <img src="assets/images/All/blog_inner_3.png" style="width: 80%; padding: 2rem 0;">
-                        <h3 id="heading">
+                        <h3 class="heading" id="conclusion">
                             Conclusion
                         </h3>
                         <p id="text">
@@ -487,8 +459,8 @@
                     <a href="contact-us.html">
                         <p class="text-decoration-underline">Discuss your project with us</p>
                     </a>
+                </div>
             </div>
-        </div>
     </section>
 
     <footer id="footer_content">
@@ -537,6 +509,15 @@
             document.getElementById('blog-inner').style.display = 'block';
             window.scrollTo(0, 0);
         }
+
+        function activateItem(item) {
+            var itemList = document.querySelectorAll('.item');
+            itemList.forEach(function (el) {
+                el.classList.remove('active');
+            });
+            item.classList.add('active');
+        }
+
         //Adding event listeners to our_services
 
         const nav_items = [{
