@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang ='eng' dir = 'ltr'>
+    <head>
+        <meta charset = 'utf -8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="stylesheet" href="/styles/navbar.css">
+        <body>
+            <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
+                <div class="container-fluid">
+                    <img src="assets/images/home/image_1.png" style="margin-left:85px;">
+                    <div class="collapse navbar-collapse">
+                        <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
+                            <div class="nav-btn-container" id="home_button">
+                                <button class="btn bg-transparent" style="margin-right:5px;">
+                                    <div style="position: relative;"><a href="index.html" class="nav-link"
+                                            onclick="loadPage('index')">Home</a>
+                                        <div class="underline"></div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="nav-btn-container" id="about_button">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                    <div style="position: relative;"><a href="/about.html" class="nav-link"
+                                            id="about-us-link" onclick="loadPage('about-us')">About</a>
+                                        <div class="underline"></div>
+                                    </div>
+                                </button>
+                            </div>
+    
+                            <div class="nav-btn-container" id="services_button">
+                                <button class="btn bg-transparent active-nav" style="margin-left:-15px; margin-right:5px;">
+                                    <div style="position: relative;"><a href="/services.html">Services</a> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                        <div class="underline" style="left: 22px;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+    
+                            <div class="nav-btn-container" id="resources_button">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                    <div style="position: relative;"><a href="/">Blog</a>
+                                        <div class="underline" style="left: 4px;"></div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="nav-btn-container" id="career_button">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                    <div style="position: relative;"><a href="/careers.html">Careers</a>
+                                        <div class="underline" style="left: 15px;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <button class="btn btn-outline-success bg-transparent" style="border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
+                            margin-left:10px;
+                            padding-left: 30px;
+                            padding-right:30px;
+                            border-radius:40px;
+                            color:white;" onclick="showSection('home_section')"> Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class = "row"  id ="page_desc">
+                <div class = "col-md-3" id = "page_title">
+                    <h2 style = "font-family: Playfair Display;font-size: 40px; color:#035485;">Our Services</h2>
+                </div>
+                    <div class = "col-md-10" id ="page_desc" style = "font-family:Raleway;font-size: 20px; color:rgba(0, 0, 0, 0.6);">
+                        <p id = "process_text">We're a full-service digital agency that offers a comprehensive range of services<br>
+                            to help businesses thrive in the ever-evolving digital landscape. From cutting-<br>
+                            edge web development and design to results-driven marketing strategies and<br>
+                            the latest advancements in AI, we stay at the forefront of technology to ensure<br>
+                            we can deliver innovative solutions that propel your business forward.</p>
+                    </div>
+            </div>
+
+
+            <div id = "our_process">
+                <h2 id = "process" style = "font-family:Sora; font-size: 44px; font-weight: 600;">Our Process</h2>
+                        <div class = "row" id = "Discovery">
+                            <div class = "col-md-6">
+                                <h2 style = "margin-bottom: 0; padding-bottom:0; font-family: Playfair Display;font-size: 40px; color:rgba(0, 0, 0, 1);">01</h2>
+                                <h1 style = "margin-top:10px; font-family: Playfair Display;font-size: 40px; color:rgba(0, 0, 0, 1);">Discovery</h1>
+                                <p id = "process_text" style = "margin-bottom: 50px; font-family: Raleway; font-size: 16px; color:rgba(0, 0, 0, 0.6)">
+                                    We take the time to understand your business goals, target audience,and<br> unique challenges.
+                                    Through open communication and collaboration, we<br>
+                                    work together to develop a clear roadmap for success.
+                                </p>
+                                <h2 style = "margin-bottom: 0; padding-bottom: 0; font-family: Playfair Display;font-size: 40px; color:rgba(0, 0, 0, 1);">02</h2>
+                                <h1 style = "margin-top:10px; font-family: Playfair Display;font-size: 40px; color:rgba(0, 0, 0, 1);">Conceptualization</h1>
+                                <p id = "process_text" style = "margin-bottom: 50px; font-family: Raleway; font-size: 16px; color:rgba(0, 0, 0, 0.6)">
+                                    Our creative team will then translate your vision into a strategic plan. This<br>
+                                    may involve crafting user personas, developing sitemaps and wireframes,<br>
+                                    and outlining the functionalities of your project.
+                                </p>
+                                <h2 style = "margin-bottom: 0; padding-bottom: 0; font-family: Playfair Display;font-size: 40px; color:rgba(0, 0, 0, 1);">03</h2>
+                                <h1 style = "margin-top:10px;font-family: Playfair Display;font-size: 40px; color:rgba(0, 0, 0, 1);">Creation</h1>
+                                <p id = "process_text" style = "margin-bottom: 50px; font-family: Raleway; font-size: 16px; color:rgba(0, 0, 0, 0.6)">
+                                    Once the plan is finalized, our skilled developers and designers will bring<br>
+                                    your project to life. We leverage the latest technologies and best practices<br>
+                                    to ensure a seamless and user-friendly experience.
+                                </p> 
+                            </div>
+                            <div class ="col-md-6" id = "process_images">
+                                <img src = "our_processes.png">
+                            </div>
+                        </div>          
+                        </div>
+                       
+            <div id = "blue_background">
+                <div class = "row">
+                    <div class = "col-md-5" id = "service_titles" >
+                        <h3 style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                        font-family:Playfair Display;"> Enterprise Software Development </h3>
+                    </div>
+                    <div class = "col-md-5" id = "service_desc" style = "font-family: Raleway; font-size: 16px;">
+                        <p>We do full-stack JS development with React or Angular in the front end and with<br>
+                        Node in the back end. Java or .Net is used based on customer requests.</p>
+                        <ul>
+                            <li>
+                                Javascript Technologies
+                            </li>
+                            <li>
+                                Java and NetSuite
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class = "row">
+                    <div class = "col-md-5" id = "service_titles">
+                        <p style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                        font-family:Playfair Display;">Software Modernization & Re-platforming</p>
+                    </div>
+                    <div class = "col-md-5" id = "service_desc" style = "font-family: Raleway; font-size: 16px;">
+                        <p><b>From Legacy to Javascript Platforms</b></p>
+                        <p>We have done modernization from SharePoint andJava applications to React and Node JS platforms</p>
+                    </div>
+                </div>
+                <hr>
+                <div class = "row">
+                    <div class = "col-md-5" id = "service_titles">
+                        <p style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                        font-family:Playfair Display;">Cloud Migration & Optimization</p>
+                    </div>
+                    <div class = "col-md-5" id = "service_desc" style = "font-family: Raleway; font-size: 16px;">
+                        <p>We help you in migrating your on-prem infrastructure to the cloud.
+                        We also help you manage and optimize your existing cloud platforms or manage your Dev Ops as a service</p>
+                        <ul>
+                            <li>AWS, Azure & GCP</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class = "row">
+                    <div class = "col-md-5" id = "service_titles">
+                        <p style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                        font-family:Playfair Display;">Business Analytics & Data Engineering</p>                    
+                    </div>
+                    <div class = "col-md-5" id ="service_desc" style = "font-family: Raleway; font-size: 16px;">
+                        <p><b>From Prepping your Data to Gen AI</b><br>
+                            <br>
+                            Data is the foundation of any business. We will build/rebuild your entire data<br>
+                            ecosystem, from prepping and cleaning your data to generating insights from it. We<br>
+                            work with all industry standard tools in addition to our own, in-house ETL platform<br>
+                            that we have built.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class = "row">
+                    <div class = "col-md-5" id = "service_titles" >
+                       <p style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                       font-family:Playfair Display;">Machine Learning & Gen AI</p>
+                    </div>
+                    <div class = "col-md-5" id ="service_desc" style = "font-family: Raleway; font-size: 16px;">
+                        <p> <b>Multiple Stacks</b>
+                            <br>
+                            <br>
+                            Interested in exploring Gen AI for your business?<br>
+                           Discover how to seamlessly integrate it into your enterprise.
+                           Enhance document management, streamline email <br>
+                           communications, and database interactions, 
+                           and unlock the potential of conversing<br>
+                           directly with your system using your enterprise data
+                        </p> 
+                    </div>
+                </div>
+                 </div>
+
+
+                    <div class = "row" id = "our_approach">
+                        <div class = "col-md-12" style = "margin-top:40px;">
+                            <h1 style = " font-family: Playfair Display; font-size: 50px; color:#035485; text-align: center;" >Our Approach</h1>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-12" id = "our_approach">
+                            <img src = "approach_steps.png">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-12" id = "our_approach">
+                            <img src = "Explore.png">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-12" id = "our_approach">
+                            <img src = "Strategize.png">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-12" id = "our_approach">
+                            <img src = "Execute.png">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-12" id = "our_approach">
+                            <img src = "Optimize.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "full-width-container" style = "width:100%; padding-right: 0%; margin-right: 0%;"id = "last_image">
+                    <div class = "background-image">
+                        <div class ="overlay-text">
+                            <h1 style = "text-align: center; font-size: 36px;font-family: Playfair Display; margin-top: 60px;margin-left:-80px;">
+                                Ready to make a difference? We're excited to hear from you. <br>
+                                Explore our  open positions and apply today to start your <br>
+                                journey with Kaay Labs.
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer id="footer_content">
+                    <div class="footer-row d-flex" style="justify-content: space-between;">
+                        <div class="col-md-3" id="logo">
+                            <img src="/assets/images/All/image_1.png" style="margin-bottom: 2rem;">
+                            <div class="col">
+                                <img src="assets/images/All/you_tube_logo.png" id="social_media_links">
+                                <img src="assets/images/All/instagram_logo.png" id="social_media_links">
+                                <img src="assets/images/All/facebook_logo.png" id="social_media_links">
+                                <img src="assets/images/All/twitter_logo.png" id="social_media_links">
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="footer_address" style="font-family: Raleway;">
+                            <p style="font-size: 20px; color:rgba(255, 255, 255, 1)">
+                                Find us at :</p>
+                            <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6)">Kaay Spaces No. 3/675 New No. 7,
+                                Sri Krishna Enclave, New beach road,
+                                Kaveri Nagar, kottivakkam.
+                                Chennai, Tamil Nadu - 600041</p>
+                            <p style="font-size: 20px; color:rgba(255, 255, 255, 1)">
+                                Call us at :</p>
+                            <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);">+91 99446 81933</p>
+                            <p style="font-size: 20px; color:rgba(255, 255, 255, 1.0);margin-bottom: 0;">Email us at :</p>
+                            <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 30px;">hello.world@kaaylabs.com
+                            </p>
+                        </div>
+                        <div class="col-md-3" id="footer_service_type" style="font-family: Raleway;">
+                            <p style="font-size: 20px; color:rgba(255, 255, 255, 1);margin-bottom: 17px;">Site Map</p>
+                            <p style="margin-top:10px;font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 20px;">About
+                            </p>
+                            <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Services</p>
+                            <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Resources</p>
+                            <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Clients</p>
+                            <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Careers</p>
+                            <p style="font-size: 16px; color:rgba(255, 255, 255, 0.6);margin-bottom: 17px;">Contact Us</p>
+                        </div>
+                    </div>
+                </footer>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        </body>
+    </html>  

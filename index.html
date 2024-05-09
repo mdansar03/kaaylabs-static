@@ -23,58 +23,64 @@
                 <img src="assets/images/home/image_1.png" style="margin-left:85px;">
                 <div class="collapse navbar-collapse">
                     <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
-                        <div class="nav-btn-container active-nav" id="home_button">
-                            <button class="btn bg-transparent" style="margin-right:5px;">
-                                <div style="position: relative;"><a href="#" class="nav-link"
-                                        onclick="loadPage('index')">Home</a>
+                        <div class="nav-btn-container " id="home_button">
+                            <a href="/index.html">
+                            <button class="btn active-nav bg-transparent" style="margin-right:5px;"
+                                onclick="showSection('home_section'); setActiveNav('home_button')">
+                                <div style="position: relative;"><a href="/">Home</a>
                                     <div class="underline"></div>
                                 </div>
-                            </button>
+                            </button></a>
                         </div>
                         <div class="nav-btn-container" id="about_button">
-                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                                <div style="position: relative;"><a href="/about.html" class="nav-link"
-                                        id="about-us-link" onclick="loadPage('about-us')">About</a>
+                            <a href="/about.html"><button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                onclick="showSection('about_section'); setActiveNav('about_button')">
+                                <div style="position: relative;">About
                                     <div class="underline"></div>
                                 </div>
-                            </button>
+                            </button></a>
                         </div>
-
+    
                         <div class="nav-btn-container" id="services_button">
-                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                                <div style="position: relative;"><a href="/">Services</a> <svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <a href="/services.html"><button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                onclick="showSection('services_section'); setActiveNav('services_button')">
+                                <div style="position: relative;">Services <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
                                     </svg>
                                     <div class="underline" style="left: 22px;">
                                     </div>
                                 </div>
-                            </button>
+                            </button></a>
                         </div>
-
+    
                         <div class="nav-btn-container" id="resources_button">
-                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                                <div style="position: relative;"><a href="/">Blog</a>
-                                    <div class="underline" style="left: 4px;"></div>
+                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                onclick="showSection('blog_section'); setActiveNav('resources_button')">
+                                <div style="position: relative;">Blog<div class="underline" style="left: 4px;"></div>
                                 </div>
                             </button>
                         </div>
+    
+    
                         <div class="nav-btn-container" id="career_button">
-                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                                <div style="position: relative;"><a href="/careers.html">Careers</a>
-                                    <div class="underline" style="left: 15px;">
-                                    </div>
+                            <a href="/careers.html">
+                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                onclick="showSection('careers_section'); setActiveNav('career_button')">
+                                <div style="position: relative;">Careers
+                                    <div class="underline" style="left: 15px;"></div>
                                 </div>
-                            </button>
+                            </button></a>
                         </div>
+    
+    
                         <button class="btn btn-outline-success bg-transparent" style="border:2px solid white; margin-left:-10px; font-family:Raleway;font-size:18px;margin-right: 50px;
-                        margin-left:10px;
-                        padding-left: 30px;
-                        padding-right:30px;
-                        border-radius:40px;
-                        color:white;" onclick="showSection('home_section')"> Contact Us</button>
+                                    margin-left:10px;
+                                    padding-left: 30px;
+                                    padding-right:30px;
+                                    border-radius:40px;
+                                    color:white;" onclick="showSection('home_section')"> Contact Us</button>
                     </div>
                 </div>
             </div>
