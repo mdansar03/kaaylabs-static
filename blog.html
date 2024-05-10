@@ -12,65 +12,68 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/navbar.css">
-    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/blog.css">
 
 <body>
     <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
         <div class="container-fluid">
             <a href="index.html">
-                <img src="assets/images/home/image_1.png" id="logo_kaaylabs" style="margin-left:85px;">
+                <img src="./assets/images/home/image_1.png" id="logo_kaaylabs" style="margin-left:85px;">
             </a>
             <div class="collapse navbar-collapse">
                 <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
                     <div class="nav-btn-container" id="home_button">
-                        <button class="btn bg-transparent" style="margin-right:5px;">
-                            <div style="position: relative;"><a href="/" class="nav-link"
-                                    onclick="loadPage('index')">Home</a>
+                        <a href="index.html">
+                        <button class="btn bg-transparent" style="margin-right:5px;"
+                            onclick="showSection('home_section'); setActiveNav('home_button')">
+                            <div style="position: relative;">Home
                                 <div class="underline"></div>
                             </div>
-                        </button>
+                        </button></a>
                     </div>
                     <div class="nav-btn-container" id="about_button">
-                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                            <div style="position: relative;"><a href="/about.html" class="nav-link" id="about-us-link"
-                                    onclick="loadPage('about-us')">About</a>
+                        <a href="about.html"><button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                            onclick="showSection('about_section'); setActiveNav('about_button')">
+                            <div style="position: relative;">About
                                 <div class="underline"></div>
                             </div>
-                        </button>
+                        </button></a>
                     </div>
 
                     <div class="nav-btn-container" id="services_button">
-                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                            <div style="position: relative;"><a href="/services.html">Services</a> <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <a href="services.html"><button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                            onclick="showSection('services_section'); setActiveNav('services_button')">
+                            <div style="position: relative;">Services <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
                                 </svg>
                                 <div class="underline" style="left: 22px;">
                                 </div>
                             </div>
-                        </button>
+                        </button></a>
                     </div>
 
                     <div class="nav-btn-container active-nav" id="blog_button">
+                        <a href="blog.html">
                         <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                            <div style="position: relative;"><a href="/blog.html">Blog</a>
+                            <div style="position: relative;">Blog
                                 <div class="underline" style="left: 4px;"></div>
                             </div>
-                        </button>
+                        </button></a>
                     </div>
                     <div class="nav-btn-container" id="career_button">
-                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                            <div style="position: relative;"><a href="/careers.html">Careers</a>
-                                <div class="underline" style="left: 15px;">
-                                </div>
+                        <a href="careers.html">
+                        <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                            onclick="showSection('careers_section'); setActiveNav('career_button')">
+                            <div style="position: relative;">Careers
+                                <div class="underline" style="left: 15px;"></div>
                             </div>
-                        </button>
+                        </button></a>
                     </div>
-                    <a href="/contact-us.html" id="contact_button">
+                    <a href="contact-us.html" id="contact_button">
                         <button class="btn btn-outline-success bg-transparent" style="
                             border:2px solid white; 
                             margin-left:-10px; 
@@ -91,7 +94,7 @@
         <div class="show-placeholder-active" id="services_button">
             <div class="row" id="services_button">
                 <div class="col-md-4" style="display: flex;flex-direction: column;gap: 2rem; padding: 4rem;">
-                    <a id="enterprise_tag" href="/services/enterprise-software-development.html"><span
+                    <a id="enterprise_tag" href="./services/enterprise-software-development.html"><span
                             style="display: inline-flex;"
                             class="enterprise_text_redirect enterprise_text_redirect_active"
                             id="enterprise_text_redirect">
@@ -106,7 +109,7 @@
                         </span>
                     </a>
 
-                    <a id="business_tag" href="/services/business-analytics-&-data-engineering.html">
+                    <a id="business_tag" href="./services/business-analytics-&-data-engineering.html">
                         <span style="display: inline-flex;" class="business_text_redirect"
                             id="business_text_redirect">
                             Business Analytics & Data Engineering
@@ -134,7 +137,7 @@
                     </a>
 
 
-                    <a id="cloud_tag" href="/services/cloud-migration-optimization.html">
+                    <a id="cloud_tag" href="./services/cloud-migration-optimization.html">
                         <span style="display: inline-flex;" class="cloud_text_redirect" id="cloud_text_redirect">
                             Cloud Migration & Optimization
                             <svg style="margin-left: 2px; margin-top: 4px" class="cloud_text_svg"
@@ -147,7 +150,7 @@
                     </a>
 
 
-                    <a id="machine_tag" href="/services/generative-ai-&-machine-learning.html">
+                    <a id="machine_tag" href="./services/generative-ai-&-machine-learning.html">
                         <span style="display: inline-flex;" class="machine_text_redirect"
                             id="machine_text_redirect">
                             Machine Learning and Gen AI
@@ -167,7 +170,7 @@
                     enterprise software development expertise ensures robust, scalable, and high-performance
                     applications designed to empower your operations and streamline workflows.
                     <div>
-                        <a href="/services/enterprise-software-development.html">
+                        <a href="./services/enterprise-software-development.html">
                             <button class="btn"
                                 style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
                                 more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -184,7 +187,7 @@
                     Transform data into actionable intelligence and foster a data-driven culture to navigate the
                     complexities of the market with precision and foresight.
                     <div>
-                        <a href="/services/business-analytics-&-data-engineering.html">
+                        <a href="./services/business-analytics-&-data-engineering.html">
                             <button class="btn"
                                 style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
                                 more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -215,7 +218,7 @@
                     seamless, secure shift from on-premises to cloud environments, improving efficiency,
                     scalability, and cost-effectiveness of your IT infrastructure.
                     <div>
-                        <a href="/services/cloud-migration-optimization.html">
+                        <a href="./services/cloud-migration-optimization.html">
                             <button class="btn"
                                 style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
                                 more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -230,7 +233,7 @@
                     text, images, code, or music. Generative AI models are trained on massive datasets of existing
                     data.
                     <div>
-                        <a href="/services/generative-ai-&-machine-learning.html">
+                        <a href="./services/generative-ai-&-machine-learning.html">
                             <button class="btn"
                                 style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
                                 more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -252,7 +255,7 @@
 
                 <div class="row" id="sector_1">
                     <div class="col-md-7">
-                        <img style="width: 100%;" src="assets/images/All/blog_main_image.png">
+                        <img style="width: 100%;" src="./assets/images/All/blog_main_image.png">
                     </div>
                     <div class="col-md-5" id="sector_1_text">
                         <p class="text-content">
@@ -268,7 +271,7 @@
                             </li>
                         </ul>
                         <div class="blog-circle-right-arrow">
-                            <img src="assets/images/All/blog-circle-right-arrow.png" />
+                            <img src="./assets/images/All/blog-circle-right-arrow.png" />
                         </div>
                     </div>
                 </div>
@@ -277,7 +280,7 @@
             <div id="blog_container_image">
                 <div class="row" style="margin-bottom:0px; margin-top:0px; padding:0px;">
                     <div class="col-sm-4 mb-3">
-                        <img src="assets/images/All/blog_grid_1.png" class="img-fluid">
+                        <img src="./assets/images/All/blog_grid_1.png" class="img-fluid">
                         <div class="space-between">
                             <div><span class="dot"></span> Kaaylabs</div>
                             <div>January 12, 2024</div>
@@ -288,7 +291,7 @@
                         </p>
                     </div>
                     <div class="col-sm-4 mb-3">
-                        <img src="assets/images/All/blog_grid_2.png" class="img-fluid">
+                        <img src="./assets/images/All/blog_grid_2.png" class="img-fluid">
                         <div class="space-between">
                             <div><span class="dot"></span> Kaaylabs</div>
                             <div>January 12, 2024</div>
@@ -299,7 +302,7 @@
                         </p>
                     </div>
                     <div class="col-sm-4 mb-3">
-                        <img src="assets/images/All/blog_grid_3.png" class="img-fluid">
+                        <img src="./assets/images/All/blog_grid_3.png" class="img-fluid">
                         <div class="space-between">
                             <div><span class="dot"></span> Kaaylabs</div>
                             <div>January 12, 2024</div>
@@ -312,7 +315,7 @@
                 </div>
                 <div class="row" style="margin-bottom:0px; margin-top:0px; padding:0px;">
                     <div class="col-sm-4 mb-3">
-                        <img src="assets/images/All/blog_grid_4.png" class="img-fluid">
+                        <img src="./assets/images/All/blog_grid_4.png" class="img-fluid">
                         <div class="space-between">
                             <div><span class="dot"></span> Kaaylabs</div>
                             <div>January 12, 2024</div>
@@ -323,7 +326,7 @@
                         </p>
                     </div>
                     <div class="col-sm-4 mb-3">
-                        <img src="assets/images/All/blog_grid_5.png" class="img-fluid">
+                        <img src="./assets/images/All/blog_grid_5.png" class="img-fluid">
                         <div class="space-between">
                             <div><span class="dot"></span> Kaaylabs</div>
                             <div>January 12, 2024</div>
@@ -334,7 +337,7 @@
                         </p>
                     </div>
                     <div class="col-sm-4 mb-3">
-                        <img src="assets/images/All/blog_grid_6.png" class="img-fluid">
+                        <img src="./assets/images/All/blog_grid_6.png" class="img-fluid">
                         <div class="space-between">
                             <div><span class="dot"></span> Kaaylabs</div>
                             <div>January 12, 2024</div>
@@ -367,7 +370,7 @@
             <div class="row">
                 <div class="col-md-2">
                     <div id="white_ellipse_top">
-                        <img src="assets/images/All/ellipse-top.png" />
+                        <img src="./assets/images/All/ellipse-top.png" />
                     </div>
                 </div>
                 <div class="col-md-9" id="stay_tuned">
@@ -390,7 +393,7 @@
                 </div>
                 <div class="col-md-2">
                     <div id="white_ellipse_bottom">
-                        <img src="assets/images/All/ellipse-down.png" />
+                        <img src="./assets/images/All/ellipse-down.png" />
                     </div>
                 </div>
             </div>
@@ -398,7 +401,7 @@
     </section>
 
     <section id="blog-inner" style="display: none;">
-        <img src="assets/images/All/blog_inner_1.png" id="first_img">
+        <img src="./assets/images/All/blog_inner_1.png" id="first_img">
         <div class="digital-marketing-container">
             <div class="row">
                 <div class="col-md-4" id="small_text" style="padding-top:220px; font-family: Raleway; font-size: 16px;">
@@ -465,7 +468,7 @@
                             Sed convallis gravida varius.Vivamus malesuada tincidunt ante et iaculis. Integer tempor ut
                             nisi nec feugiat.
                         </p>
-                        <img src="assets/images/All/blog_inner_2.png" style="width: 80%; padding: 2rem 0">
+                        <img src="./assets/images/All/blog_inner_2.png" style="width: 80%; padding: 2rem 0">
                         <h3 class="heading" id="reach-more-audiences">
                             Reach more audiences
                         </h3>
@@ -529,7 +532,7 @@
                             Curabitur et enim dignissim, rhoncus ipsum sed, cursus sapien. Ut convallis sollicitudin
                             metus eu dictum.
                         </p>
-                        <img src="assets/images/All/blog_inner_3.png" style="width: 80%; padding: 2rem 0;">
+                        <img src="./assets/images/All/blog_inner_3.png" style="width: 80%; padding: 2rem 0;">
                         <h3 class="heading" id="conclusion">
                             Conclusion
                         </h3>
@@ -549,10 +552,10 @@
                             <h3 id="heading">
                                 Share the article
                             </h3>
-                            <img src="assets/images/All/insta-blue.png" id="social_media_links">
-                            <a href="https://www.facebook.com/kaaylabs/"><img src="assets/images/All/facebook-blue.png"
+                            <img src="./assets/images/All/insta-blue.png" id="social_media_links">
+                            <a href="https://www.facebook.com/kaaylabs/"><img src="./assets/images/All/facebook-blue.png"
                                     id="social_media_links"></a>
-                            <a href="https://twitter.com/kaaylabs"><img src="assets/images/All/twitter-blue.png"
+                            <a href="https://twitter.com/kaaylabs"><img src="./assets/images/All/twitter-blue.png"
                                     id="social_media_links"></a>
                         </div>
                     </div>
@@ -572,7 +575,7 @@
             </h2>
             <div class="row">
                 <div class="col-sm-4 mb-3">
-                    <img src="assets/images/All/blog_grid_1.png" class="img-fluid">
+                    <img src="./assets/images/All/blog_grid_1.png" class="img-fluid">
                     <div class="space-between">
                         <div><span class="dot"></span> Kaaylabs</div>
                         <div>January 12, 2024</div>
@@ -583,7 +586,7 @@
                     </p>
                 </div>
                 <div class="col-sm-4 mb-3">
-                    <img src="assets/images/All/blog_grid_2.png" class="img-fluid">
+                    <img src="./assets/images/All/blog_grid_2.png" class="img-fluid">
                     <div class="space-between">
                         <div><span class="dot"></span> Kaaylabs</div>
                         <div>January 12, 2024</div>
@@ -594,7 +597,7 @@
                     </p>
                 </div>
                 <div class="col-sm-4 mb-3">
-                    <img src="assets/images/All/blog_grid_2.png" class="img-fluid">
+                    <img src="./assets/images/All/blog_grid_2.png" class="img-fluid">
                     <div class="space-between">
                         <div><span class="dot"></span> Kaaylabs</div>
                         <div>January 12, 2024</div>
@@ -610,7 +613,7 @@
         <div id="work_together_background">
             <div class="row" id="work_together">
                 <div class="col-md-5" id="work_together_img">
-                    <img src="assets/images/All/work_together.png" style="margin-left:20px; ">
+                    <img src="./assets/images/All/work_together.png" style="margin-left:20px; ">
                 </div>
                 <div class="col-md-6" id="work_together_text">
                     <h1 class="lets-work">
@@ -630,14 +633,14 @@
     <footer id="footer_content">
         <div class="footer-row d-flex" style="justify-content: space-between;">
             <div class="col-md-3" id="logo">
-                <img src="assets/images/All/image_1.png" style="margin-bottom: 2rem;">
+                <img src="./assets/images/All/image_1.png" style="margin-bottom: 2rem;">
                 <div class="col">
-                    <img src="assets/images/All/you_tube_logo.png" id="social_media_links">
-                    <img src="assets/images/All/instagram_logo.png" id="social_media_links">
+                    <img src="./assets/images/All/you_tube_logo.png" id="social_media_links">
+                    <img src="./assets/images/All/instagram_logo.png" id="social_media_links">
                     <a href="https://www.facebook.com/kaaylabs/" target="_blank"><img
-                            src="assets/images/All/facebook_logo.png" id="social_media_links"></a>
+                            src="./assets/images/All/facebook_logo.png" id="social_media_links"></a>
                     <a href="https://twitter.com/kaaylabs" target="_blank"><img
-                            src="assets/images/All/twitter_logo.png" id="social_media_links"></a>
+                            src="./assets/images/All/twitter_logo.png" id="social_media_links"></a>
                 </div>
             </div>
             <div class="col-md-3" id="footer_address" style="font-family: Raleway;">
@@ -695,7 +698,7 @@
             item.classList.add('active');
         }
     </script>
-    <script src="scripts/services.js"></script>
+    <script src="./scripts/services.js"></script>
 
 </body>
 
