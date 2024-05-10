@@ -211,11 +211,16 @@
     overflow: hidden;
     border-radius: 5px;
 }
-input {
-    visibility: hidden;
-    opacity: 0;
+
+.carousel-block-service{
+    input {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
 }
-label {
+
+.label {
     position: absolute;
     top: 50%;
     right: 150px;
@@ -235,7 +240,11 @@ label[for="slider3"]{margin-top: 40px;}
 label[for="slider4"]{margin-top: 60px;}
 label[for="slider5"]{margin-top: 80px;}
 
-input:checked + label , label:hover {background: #770999;}
+.carousel-block-service {
+    input:checked + label , label:hover {background: #770999;}
+    
+}
+
 
 .slide {
     position: absolute;
