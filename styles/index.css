@@ -239,3 +239,7 @@ a:active {
     font-size: 40px;
     color: #035485;
 }
+
+.show-placeholder-active {
+    border-top: 1px solid;
+}

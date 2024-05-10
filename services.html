@@ -24,68 +24,66 @@
 
 <body>
     <div>
-    <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
-        <div class="container-fluid">
-            <img src="assets/images/home/image_1.png" id="logo_kaaylabs" style="margin-left:85px;">
-            <div class="collapse navbar-collapse">
-                <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
-                    <div class="nav-btn-container" id="home_button">
-                        <a href="/index.html">
-                            <button class="btn bg-transparent" style="margin-right:5px;"
-                                onclick="showSection('home_section'); setActiveNav('home_button')">
-                                <div style="position: relative;"><a href="/">Home</a>
-                                    <div class="underline"></div>
-                                </div>
-                            </button></a>
-                    </div>
-                    <div class="nav-btn-container" id="about_button">
-                        <a href="/about.html"><button class="btn bg-transparent"
-                                style="margin-left:-15px; margin-right:5px;"
-                                onclick="showSection('about_section'); setActiveNav('about_button')">
-                                <div style="position: relative;">About
-                                    <div class="underline"></div>
-                                </div>
-                            </button></a>
-                    </div>
+        <nav class="navbar navbar-expand navbar-custom" style="height:100px;">
+            <div class="container-fluid">
+                <img src="assets/images/home/image_1.png" id="logo_kaaylabs" style="margin-left:85px;">
+                <div class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse nav-bar" style="justify-content: end;">
+                        <div class="nav-btn-container" id="home_button">
+                            <a href="/index.html">
+                                <button class="btn bg-transparent" style="margin-right:5px;"
+                                    onclick="showSection('home_section'); setActiveNav('home_button')">
+                                    <div style="position: relative;"><a href="/">Home</a>
+                                        <div class="underline"></div>
+                                    </div>
+                                </button></a>
+                        </div>
+                        <div class="nav-btn-container" id="about_button">
+                            <a href="/about.html"><button class="btn bg-transparent"
+                                    style="margin-left:-15px; margin-right:5px;"
+                                    onclick="showSection('about_section'); setActiveNav('about_button')">
+                                    <div style="position: relative;">About
+                                        <div class="underline"></div>
+                                    </div>
+                                </button></a>
+                        </div>
 
-                    <div class="nav-btn-container" id="services_button">
-                        <button class="btn bg-transparent  active-nav"
-                                style="margin-left:-15px; margin-right:5px;"
+                        <div class="nav-btn-container" id="services_button">
+                            <button class="btn bg-transparent  active-nav" style="margin-left:-15px; margin-right:5px;"
                                 onclick="showSection('services_section'); setActiveNav('services_button')">
-                                <div style="position: relative;"><a href="/services.html">Services</a> 
+                                <div style="position: relative;"><a href="/services.html">Services</a>
                                     <span onclick="drop_down()">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" fill="currentColor" class="bi bi-chevron-right"
-                                        viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                                    </svg>
-                                </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                    </span>
                                     <div class="underline" style="left: 22px;">
                                     </div>
                                 </div>
                             </button>
-                    </div>
+                        </div>
 
-                    <div class="nav-btn-container" id="blog_button">
-                        <a href="/blog.html">
-                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
-                                <div style="position: relative;">Blog
-                                    <div class="underline" style="left: 4px;"></div>
-                                </div>
-                            </button></a>
-                    </div>
-                    <div class="nav-btn-container" id="career_button">
-                        <a href="/careers.html">
-                            <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
-                                onclick="showSection('careers_section'); setActiveNav('career_button')">
-                                <div style="position: relative;">Careers
-                                    <div class="underline" style="left: 15px;"></div>
-                                </div>
-                            </button></a>
-                    </div>
-                    <a href="/contact-us.html" id="contact_button">
-                        <button class="btn btn-outline-success bg-transparent" style="
+                        <div class="nav-btn-container" id="blog_button">
+                            <a href="/blog.html">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;">
+                                    <div style="position: relative;">Blog
+                                        <div class="underline" style="left: 4px;"></div>
+                                    </div>
+                                </button></a>
+                        </div>
+                        <div class="nav-btn-container" id="career_button">
+                            <a href="/careers.html">
+                                <button class="btn bg-transparent" style="margin-left:-15px; margin-right:5px;"
+                                    onclick="showSection('careers_section'); setActiveNav('career_button')">
+                                    <div style="position: relative;">Careers
+                                        <div class="underline" style="left: 15px;"></div>
+                                    </div>
+                                </button></a>
+                        </div>
+                        <a href="/contact-us.html" id="contact_button">
+                            <button class="btn btn-outline-success bg-transparent" style="
                                     border:2px solid white; 
                                     margin-left:-10px; 
                                     font-family:Raleway;
@@ -96,31 +94,171 @@
                                     padding-right:30px;
                                     border-radius:40px;
                                     color:white;" onclick="showSection('home_section')">
-                            Contact Us
-                        </button>
-                    </a>
+                                Contact Us
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="show-placeholder-active" id = "services_button">
-            <div class = "row" id="services_button">
-                <div class = "col-md-4">
-                    <div class = "col-md-4">
-                        <button class = "btn btn-transparent" id = "enterprise_software" >Enterprise Software Development</button>
-                        <button class = "btn btn-transparent" id = "business_analytics" > Business Analytics & Data Engineering </button>
-                        <button class = "btn btn-transparent" id = "software_mordernization" >Software Modernization Re-platforming</button>
-                        <button class = "btn btn-transparent" id = "cloud_migration" >Cloud Migration & Optimization</button>                                         
+            <div class="show-placeholder-active" id="services_button">
+                <div class="row" id="services_button">
+                    <div class="col-md-4" style="display: flex;flex-direction: column;gap: 2rem; padding: 4rem;">
+                        <a id="enterprise_tag" href="/services/enterprise-software-development.html"><span
+                                style="display: inline-flex;"
+                                class="enterprise_text_redirect enterprise_text_redirect_active"
+                                id="enterprise_text_redirect">
+                                Enterprise Software Development
+                                <svg style="margin-left: 2px; margin-top: 4px"
+                                    class="enterprise_text_svg enterprise_text_svg_active" id="enterprise_text_svg"
+                                    xmlns="http://www.w3.org/2000/svg" width="28" height="14" fill="currentColor"
+                                    class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a id="business_tag" href="/services/business-analytics-&-data-engineering.html">
+                            <span style="display: inline-flex;" class="business_text_redirect"
+                                id="business_text_redirect">
+                                Business Analytics & Data Engineering
+                                <svg style="margin-left: 2px; margin-top: 4px" class="business_text_svg"
+                                    id="business_text_svg" xmlns="http://www.w3.org/2000/svg" width="28" height="14"
+                                    fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </span>
+                        </a>
+
+
+                        <a id="software_tag" href="">
+                            <span style="display: inline-flex;" class="software_text_redirect"
+                                id="software_text_redirect">
+                                Software Modernization Re-platforming
+                                <svg style="margin-left: 2px; margin-top: 4px" class="software_text_svg"
+                                    id="software_text_svg" xmlns="http://www.w3.org/2000/svg" width="28" height="14"
+                                    fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </span>
+                        </a>
+
+
+                        <a id="cloud_tag" href="/services/cloud-migration-optimization.html">
+                            <span style="display: inline-flex;" class="cloud_text_redirect" id="cloud_text_redirect">
+                                Cloud Migration & Optimization
+                                <svg style="margin-left: 2px; margin-top: 4px" class="cloud_text_svg"
+                                    id="cloud_text_svg" xmlns="http://www.w3.org/2000/svg" width="28" height="14"
+                                    fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </span>
+                        </a>
+
+
+                        <a id="machine_tag" href="/services/generative-ai-&-machine-learning.html">
+                            <span style="display: inline-flex;" class="machine_text_redirect"
+                                id="machine_text_redirect">
+                                Machine Learning and Gen AI
+                                <svg style="margin-left: 2px; margin-top: 4px" class="machine_text_svg"
+                                    id="machine_text_svg" xmlns="http://www.w3.org/2000/svg" width="28" height="14"
+                                    fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col-md-6 content_window active_enterprise_tag" id="active_enterprise_tag"
+                        style="padding-top: 4rem;">
+                        Elevate your business with custom software solutions tailored to your unique needs. Our
+                        enterprise software development expertise ensures robust, scalable, and high-performance
+                        applications designed to empower your operations and streamline workflows.
+                        <div>
+                            <a href="/services/enterprise-software-development.html">
+                                <button class="btn"
+                                    style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
+                                    more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                    </svg></button>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 content_window" id="active_business_tag" style="padding-top: 4rem;">
+                        Unlock insights and drive strategy with our business analytics and data engineering services.
+                        Transform data into actionable intelligence and foster a data-driven culture to navigate the
+                        complexities of the market with precision and foresight.
+                        <div>
+                            <a href="/services/business-analytics-&-data-engineering.html">
+                                <button class="btn"
+                                    style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
+                                    more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                    </svg></button>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 content_window" id="active_software_tag" style="padding-top: 4rem;">
+                        Rejuvenate your legacy systems with our software modernization and re-platforming services. By
+                        updating outdated architectures and migrating to newer, agile platforms, we ensure your software
+                        stays competitive, secure, and aligned with current technologies.
+                        <div>
+                            <button class="btn"
+                                style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
+                                more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 content_window" id="active_cloud_tag" style="padding-top: 4rem;">
+                        Transition to the cloud with confidence. Our cloud migration and optimization services provide a
+                        seamless, secure shift from on-premises to cloud environments, improving efficiency,
+                        scalability, and cost-effectiveness of your IT infrastructure.
+                        <div>
+                            <a href="/services/cloud-migration-optimization.html">
+                                <button class="btn"
+                                    style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
+                                    more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                    </svg></button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 content_window" id="active_machine_tag" style="padding-top: 4rem;">
+                        Generative AI is a subfield of artificial intelligence (AI) focused on creating new data, like
+                        text, images, code, or music. Generative AI models are trained on massive datasets of existing
+                        data.
+                        <div>
+                            <a href="/services/generative-ai-&-machine-learning.html">
+                                <button class="btn"
+                                    style="border: 1px solid; margin: 1rem 0; font-size: 14px; padding-left: 15px; padding-right: 10px;">know
+                                    more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                    </svg></button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                <div class = "col-md-6" id = "content_window">
-                    Elevate your business with custom software solutions tailored to your unique needs. Our enterprise software development expertise ensures robust, scalable, and high-performance applications designed to empower your operations and streamline workflows.
-                </div>
+
             </div>
-    
-        </div>
-    </nav>
-    <div class="blue_background_navbar"></div>
-</div>
+        </nav>
+        <div class="blue_background_navbar"></div>
+    </div>
 
     <div class="row" id="page_desc" style="margin-top: 1rem; padding-left: 5rem; margin-bottom: 8rem;">
         <div class="col-md-3" id="page_title">
@@ -181,15 +319,17 @@
         </div>
     </div>
 
-    <div id = "blue_background">
-        <div class = "row">
-            <div class = "col-md-5" id = "service_titles" >
-                <a href="/services/enterprise-software-development.html"><h3 style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
-                font-family:Playfair Display;"> Enterprise Software Development </h3></a>
+    <div id="blue_background">
+        <div class="row">
+            <div class="col-md-5" id="service_titles">
+                <a href="/services/enterprise-software-development.html">
+                    <h3 style="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                font-family:Playfair Display;"> Enterprise Software Development </h3>
+                </a>
             </div>
-            <div class = "col-md-5" id = "service_desc" style = "font-family: Raleway; font-size: 16px;">
+            <div class="col-md-5" id="service_desc" style="font-family: Raleway; font-size: 16px;">
                 <p>We do full-stack JS development with React or Angular in the front end and with<br>
-                Node in the back end. Java or .Net is used based on customer requests.</p>
+                    Node in the back end. Java or .Net is used based on customer requests.</p>
                 <ul>
                     <li>
                         Javascript Technologies
@@ -198,81 +338,86 @@
                         Java and NetSuite
                     </li>
                 </ul>
-                
+
             </div>
         </div>
         <hr>
-        <div class = "row">
-            <div class = "col-md-5" id = "service_titles">
+        <div class="row">
+            <div class="col-md-5" id="service_titles">
                 <a href="">
-                <p style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
-                font-family:Playfair Display;">Software Modernization & Re-platforming</p></a>
+                    <p style="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                font-family:Playfair Display;">Software Modernization & Re-platforming</p>
+                </a>
             </div>
-            <div class = "col-md-5" id = "service_desc" style = "font-family: Raleway; font-size: 16px;">
+            <div class="col-md-5" id="service_desc" style="font-family: Raleway; font-size: 16px;">
                 <p><b>From Legacy to Javascript Platforms</b></p>
                 <p>We have done modernization from SharePoint andJava applications to React and Node JS platforms</p>
             </div>
         </div>
         <hr>
-        <div class = "row">
-            <div class = "col-md-5" id = "service_titles">
+        <div class="row">
+            <div class="col-md-5" id="service_titles">
                 <a href="/services/cloud-migration-optimization.html">
-                <p style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                    <p style="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
                 font-family:Playfair Display;">Cloud Migration & Optimization</p>
                 </a>
             </div>
-            <div class = "col-md-5" id = "service_desc" style = "font-family: Raleway; font-size: 16px;">
+            <div class="col-md-5" id="service_desc" style="font-family: Raleway; font-size: 16px;">
                 <p>We help you in migrating your on-prem infrastructure to the cloud.
-                We also help you manage and optimize your existing cloud platforms or manage your Dev Ops as a service</p>
+                    We also help you manage and optimize your existing cloud platforms or manage your Dev Ops as a
+                    service</p>
                 <ul>
                     <li>AWS, Azure & GCP</li>
                 </ul>
             </div>
         </div>
         <hr>
-        <div class = "row">
-            <div class = "col-md-5" id = "service_titles">
+        <div class="row">
+            <div class="col-md-5" id="service_titles">
                 <a href="/services/business-analytics-&-data-engineering.html">
-                <p style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
-                font-family:Playfair Display;">Business Analytics & Data Engineering</p> 
-                </a>                   
+                    <p style="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                font-family:Playfair Display;">Business Analytics & Data Engineering</p>
+                </a>
             </div>
-            <div class = "col-md-5" id ="service_desc" style = "font-family: Raleway; font-size: 16px;">
+            <div class="col-md-5" id="service_desc" style="font-family: Raleway; font-size: 16px;">
                 <p><b>From Prepping your Data to Gen AI</b><br>
                     <br>
                     Data is the foundation of any business. We will build/rebuild your entire data<br>
                     ecosystem, from prepping and cleaning your data to generating insights from it. We<br>
                     work with all industry standard tools in addition to our own, in-house ETL platform<br>
-                    that we have built.</p>
+                    that we have built.
+                </p>
             </div>
         </div>
         <hr>
-        <div class = "row">
-            <div class = "col-md-5" id = "service_titles" >
+        <div class="row">
+            <div class="col-md-5" id="service_titles">
                 <a href="/services/generative-ai-&-machine-learning.html">
-               <p style ="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
+                    <p style="margin-top:10px; color:rgba(255, 255, 255, 1); font-size:28px;
                font-family:Playfair Display;">Machine Learning & Gen AI</p>
-               </a>
+                </a>
             </div>
-            <div class = "col-md-5" id ="service_desc" style = "font-family: Raleway; font-size: 16px;">
+            <div class="col-md-5" id="service_desc" style="font-family: Raleway; font-size: 16px;">
                 <p> <b>Multiple Stacks</b>
                     <br>
                     <br>
                     Interested in exploring Gen AI for your business?<br>
-                   Discover how to seamlessly integrate it into your enterprise.
-                   Enhance document management, streamline email <br>
-                   communications, and database interactions, 
-                   and unlock the potential of conversing<br>
-                   directly with your system using your enterprise data
-                </p> 
+                    Discover how to seamlessly integrate it into your enterprise.
+                    Enhance document management, streamline email <br>
+                    communications, and database interactions,
+                    and unlock the potential of conversing<br>
+                    directly with your system using your enterprise data
+                </p>
             </div>
         </div>
-         </div>
+    </div>
 
 
     <div class="row" id="our_approach">
         <div class="col-md-12" style="margin-top:40px;">
-            <h1 style=" font-family: Playfair Display; font-size: 50px; color:#035485; margin-bottom: 2rem; text-align: center;">Our Approach
+            <h1
+                style=" font-family: Playfair Display; font-size: 50px; color:#035485; margin-bottom: 2rem; text-align: center;">
+                Our Approach
             </h1>
         </div>
     </div>
@@ -286,12 +431,12 @@
             <img src="/assets/images/All/Explore.png">
         </div>
     </div>
-    <div class="row"  style="margin-top: 3rem;">
+    <div class="row" style="margin-top: 3rem;">
         <div class="col-md-12 d-flex justify-content-center" id="our_approach">
             <img src="/assets/images/All/Startegize.png">
         </div>
     </div>
-    <div class="row"  style="margin-top: 3rem;">
+    <div class="row" style="margin-top: 3rem;">
         <div class="col-md-12 d-flex justify-content-center" id="our_approach">
             <img src="/assets/images/All/Execute.png">
         </div>
@@ -303,10 +448,11 @@
     </div>
     </div>
 
-    <div class="full-width-container" style="width:100%; padding-right: 0%; margin-right: 0%; margin-top: 4rem; position: relative;"
-        id="last_image">
+    <div class="full-width-container"
+        style="width:100%; padding-right: 0%; margin-right: 0%; margin-top: 4rem; position: relative;" id="last_image">
         <div class="background-images">
-            <img src="./assets/images/All/back_img_chair.png" style="width: 100%; height: 50%;filter: brightness(0.5);" alt="">
+            <img src="./assets/images/All/back_img_chair.png" style="width: 100%; height: 50%;filter: brightness(0.5);"
+                alt="">
         </div>
         <div class="overlay-text" style="position: absolute; top: 20%; left: 26%; color: white;">
             <h1

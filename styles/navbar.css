@@ -7,3 +7,84 @@
   background-color: white;
   margin-top: 3px;
 }
+
+.show-placeholder-active{
+  display:none;
+  position: absolute;
+  z-index: 1;
+  background-color: #035485;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top:100%;
+  width:100vw;
+  transition:height 1s ease;
+ 
+}
+
+.active-placeholder {
+  display: block;
+}
+
+
+
+
+.active_enterprise_tag, 
+.active_business_tag,
+.active_software_tag,
+.active_cloud_tag,
+.active_machine_tag{
+    display: block !important;
+    
+}
+
+.content_window{
+    display: none;
+    font-family: 'raleway', sans-serif;
+}
+
+.service_text_svg{
+    display: none;
+}
+
+.business_text_svg,
+.enterprise_text_svg,
+.software_text_svg,
+.cloud_text_svg,
+.machine_text_svg{
+    display: none;
+}
+
+.business_text_svg_active,
+.enterprise_text_svg_active,
+.software_text_svg_active,
+.cloud_text_svg_active,
+.machine_text_svg_active{
+    display: block !important;
+}
+
+.service_text_redirect_active{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+.service_text_svg_active{
+    display: block !important;
+}
+
+.machine_text_redirect_active,
+.cloud_text_redirect_active,
+.software_text_redirect_active,
+.business_text_redirect_active,
+.enterprise_text_redirect_active{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+
+}
+
+#enterprise_text_redirect,
+#cloud_text_redirect,
+#machine_text_redirect,
+#software_text_redirect,
+#business_text_redirect
+{
+    font-family: 'raleway', sans-serif;
+}
+

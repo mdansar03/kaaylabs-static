@@ -34,8 +34,8 @@
     text-align: center;
     margin-top:15px;
     margin-left:15px;
-    top: 30%; /* Adjust as per your design */
-    left: 15%; /* Adjust as per your design */
+    top: 30%; 
+    left: 15%; 
     color: white;
 }
 
@@ -200,19 +200,4 @@
     color:white;
     font-family:"Raleway";
     font-size:18px;
-}
-.show-placeholder-active{
-    display:none;
-    position: absolute;
-    z-index: 1;
-    background-color: #035485;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top:100%;
-    width:100vw;
-    transition:height 1s ease;
-   
-}
-
-.active-placeholder {
-    display: block;
 }
