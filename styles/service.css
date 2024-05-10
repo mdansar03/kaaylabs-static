@@ -201,3 +201,74 @@
     font-family:"Raleway";
     font-size:18px;
 }
+
+
+.slide-wrapper {
+    margin-top: 5rem;
+    width: 100%;
+    height: 715px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+input {
+    visibility: hidden;
+    opacity: 0;
+}
+label {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(30, 34, 154, 0.4);
+    transition: 0.4;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+label[for="slider2"]{margin-top: 20px;}
+label[for="slider3"]{margin-top: 40px;}
+label[for="slider4"]{margin-top: 60px;}
+label[for="slider5"]{margin-top: 80px;}
+
+input:checked + label , label:hover {background: #770999;}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    transition-duration: .8s;
+    opacity: 1;
+    transform-origin: 50% 50%;
+}
+input:checked + .slide {
+    transform: translateY(100%);
+}
+input:checked + label + .slide {
+    transform: translateY(0);
+    opacity: 1;
+}
+.slide1 {
+    background-image: url(/assets/images/All/Explore.png);
+    /* background-size: cover; */
+}
+.slide2 {background-image: url(/assets/images/All/Startegize.png);
+    /* background-size: cover; */
+}
+.slide3 {background-image: url(/assets/images/All/Execute.png);
+    /* background-size: cover; */
+}
+.slide4 {background-image: url(/assets/images/All/Optimize.png);
+    /* background-size: cover; */
+}
