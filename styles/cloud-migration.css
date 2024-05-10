@@ -1,0 +1,272 @@
+.show-placeholder {
+    display: block;
+    height: 60vh;
+    position: absolute;
+    z-index: 1;
+    background-color: #035485;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    width: 100vw;
+    transition: height 1s ease;
+}
+
+.overlay-text {
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 10px;
+    color: white;
+}
+
+.generative-ai-content {
+    padding: 2rem 4rem 4rem 4rem;
+}
+
+.background-image {
+    position: relative;
+    color: white;
+}
+
+.generate-heading {
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 120px;
+    letter-spacing: 0.02em;
+    padding: 0 3rem;
+}
+
+.card-text {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+}
+
+.overlay-box {
+    background-color: #035485;
+    position: absolute;
+    bottom: -15%;
+    left: 5%;
+    color: white;
+    width: 659px;
+    height: 381px;
+    padding: 4rem 4rem 3rem 2rem;
+}
+
+#contact_us {
+    background-color: #035485;
+    color: white;
+    border-color: white;
+    margin-top: 20px;
+    margin-left: 0px !important;
+    border-radius: 0;
+    width: 218;
+    height: 64;
+    font-size: 24px;
+    font-family: "Raleway";
+    width: 218px;
+    height: 64px;
+    border: 1px solid;
+}
+
+.harness-container {
+    padding: 13rem 0 0 3rem;
+}
+
+.recognize-prg {
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+}
+
+.what-generate-content {
+    padding: 4rem;
+    background: #FAFAFA;
+}
+
+#blue_text {
+    color: #035485;
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+}
+
+.generate-prg {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    width: 80%;
+}
+
+.ba_text_h {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+}
+
+.ba_text_p {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+}
+
+.ba-btn {
+    width: 154px;
+    height: 52px;
+    background-color: white;
+    border-color: black;
+    color: black;
+    font-family: Raleway;
+    font-size: 20px;
+    border-radius: 0;
+    border: 1px solid;
+    padding: 5px;
+}
+
+#benifit-container {
+    padding: 4rem 4rem 2rem 4rem;
+}
+
+#benifit-content {
+    border-right: 1px solid;
+}
+
+#benifit-heading {
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: #035485;
+}
+
+#focus-business {
+    padding: 0 5rem;
+}
+
+.tech-title {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+
+#tech_used {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: rgba(146, 146, 146, 1);
+}
+
+
+#logos {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 18%;
+}
+
+.cloud-managed-box {
+    border: 2px solid #035485;
+    width: 100%;
+    height: 280px;
+}
+
+#kaaylabs-container {
+    padding: 4rem;
+    background: #FAFAFA;
+}
+
+.card-heading {
+    padding-top: 5px;
+    padding-left: 20px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #035485;
+}
+
+.cloud-card {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: rgba(100, 100, 100, 1);
+}
+
+#work_together {
+    padding: 3rem 4rem;
+}
+
+#work_together_img {
+    text-align: right;
+}
+
+#work_together_text {
+    margin-left: 20px;
+    align-items: right;
+}
+
+.work_together-title {
+    font-family: Playfair Display;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.03em;
+}
+
+#together-text {
+    margin-top: 30px;
+}
+
+.explore-container {
+    background: #FAFAFA;
+    padding: 4rem;
+}
+
+#footer_content {
+    background-color: #242424;
+    color: white;
+}
+
+#logo {
+    padding-left: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#social_media_links {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#footer_service_type {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 150px;
+}
+
+#footer_address {
+    margin-top: 50px;
+}

@@ -1,46 +1,3 @@
-/* .btn-group{
-    padding-right: 40px;
-    
-}
-.placeholder{
-    display: none;
-    height:0;   
-}
-.btn:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-.btn:active {
-    box-shadow: none !important;
-}
-.show-placeholder{
-    display:block;
-    height:60vh;
-    position: absolute;
-    z-index: 1;
-    background-color: #035485;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top:100%;
-    width:100vw;
-    transition:height 1s ease;
-} 
-#about_button,
-#services_button,
-#resources_button,
-#client_button,
-#career_button,
-#contact{
-    margin-right: 50px;
-    margin-left:10px;
-    padding-left: 30px;
-    padding-right:30px;
-    border-radius:40px;
-    color:white;
-    font-family:"Raleway";
-    font-size:18px;
-} */
-/* ================= */
 .container {
     margin: 0;
     padding: 3rem 4rem;
@@ -126,7 +83,6 @@
     margin-bottom: 10px;
 }
 
-
 #send_message {
     width: 202px;
     height: 56px;
@@ -154,8 +110,6 @@
     line-height: 32px;
     letter-spacing: 0.04em;
 }
-
-
 
 #footer_content {
     background-color: #242424;

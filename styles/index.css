@@ -1,30 +1,30 @@
 html,
 body {
-  max-width: 100%;
-  overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar-custom {
-  background-color: #035485;
-  color: white;
-  text-align: left;
-  position: relative;
+    background-color: #035485;
+    color: white;
+    text-align: left;
+    position: relative;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a,
 a:visited,
 a:hover,
 a:active {
-  color: inherit;
+    color: inherit;
 }
 
 .placeholder {
-  display: none;
-  height: 0;
+    display: none;
+    height: 0;
 }
 
 .placeholder {
@@ -33,12 +33,12 @@ a:active {
 }
 
 .btn:focus {
-  outline: none !important;
-  box-shadow: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .btn:active {
-  box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .exp-btn:focus {
@@ -56,14 +56,11 @@ a:active {
 
 .carousel-caption {
     position: absolute;
-    bottom: 50px;
     left: 0;
-    width: 940px;
     right: 0;
+    bottom: 9rem;
     text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 85px;
+    padding: 0 10rem;
 }
 
 .carousel-heading {
@@ -175,9 +172,25 @@ a:active {
     padding: 4rem 0 4rem 4rem;
     background: #FAFAFA;
 }
+
+.our-services-img {
+    width: 25%;
+    padding-bottom: 1rem;
+}
+
+.our-services-text {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    letter-spacing: 0.02em;
+    padding-bottom: 1rem;
+}
+
 #work_together {
     padding: 3rem 4rem;
 }
+
 #work_together_img {
     text-align: right;
 }
@@ -221,7 +234,7 @@ a:active {
     margin-top: 50px;
 }
 
-.blue_text_1{
+.blue_text_1 {
     font-family: "Playfair Display";
     font-size: 40px;
     color: #035485;
