@@ -15,7 +15,10 @@
     font-family: "Raleway";
     font-size:16px;
    }
-
+   .explore-container {
+        background: #FAFAFA;
+        padding: 4rem;
+    }
 /* Enterprise styles */
 
 #title_card{
