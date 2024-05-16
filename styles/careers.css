@@ -26,7 +26,7 @@
 
 #blue_text {
   color: #035485;
-  font-family: "Playfair Display";
+  font-family: "Raleway Display";
   font-size: 50px;
 }
 
@@ -64,7 +64,7 @@
 #blue_text_2 {
   margin-top: 30px;
   font-size: 40;
-  font-family: "Playfair Display";
+  font-family: "Raleway Display";
   font-weight: 500;
   color: #035485;
 }
@@ -85,7 +85,7 @@
   margin-left: 40px;
 }
 #white_text_head {
-  font-family: "Playfair Display";
+  font-family: "Raleway Display";
   font-size: 30px;
   font-weight: 600;
   color: rgba(255, 255, 255, 1);

@@ -64,7 +64,7 @@ a:active {
 }
 
 .carousel-heading {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway Display', serif;
     font-size: 48px;
     font-weight: 600;
     letter-spacing: 0.04em;
@@ -88,6 +88,29 @@ a:active {
     font-family: "Raleway";
     font-size: 18px;
 }
+
+.btn-basic :hover::before{
+    transform: scale(1.1);
+  box-shadow: 0 0 25px #035485;
+}
+
+.btn-basic:hover {
+    box-shadow: 0 0 5px #fafafa;
+  }
+.btn-basic-blue:hover {
+    box-shadow: 0 0 5px #035485;
+  }
+
+  .glow-text-white:hover{
+    text-shadow: 0 0 4px #fafafa;
+  }
+  .glow-text-blue:hover{
+    text-shadow: 0 0 20px #035485;
+  }
+
+
+
+
 
 .exp-btn {
     margin-right: 50px;
@@ -235,7 +258,7 @@ a:active {
 }
 
 .blue_text_1 {
-    font-family: "Playfair Display";
+    font-family: "Raleway Display";
     font-size: 40px;
     color: #035485;
 }
